@@ -1,8 +1,8 @@
 .stripes__span
     height: 190px
 
-.main-nav__logo
-    fill: #fff
+.logo
+    fill: #ffffff
     
 .main-nav__links
     list-style: none
@@ -11,16 +11,47 @@
         display: inline
         padding: 0 25px 0 25px
 
-    li:last-child
+    li:last-child,
+    li:last-of-type
         padding-right: 0
 
     a
         color: #fff
 
-.main-nav__links--secondary
+.main-nav__links:last-of-type
     grid-column: -1
 
-    li:last-of-type:after
+    li:last-of-type::after
         content: '\279E'
         padding-left: 1px
         color: #fff
+    
+.intro__pill-message
+    border-radius: 15px
+    font-size: 12px
+    font-weight: 600
+    background-color: rgba(0,0,0,0.05)
+    padding: 4px
+    color: #ffffff
+    padding-right: 10px
+
+    span
+        background-color: #24b47e
+        border-radius: 15px
+        padding-left: 6px
+        padding-right: 6px 
+        font-size: 11px
+        
+.intro h1
+    margin-top: 55px
+    font-weight: 400
+    font-size: 40px
+    
+.intro p
+    margin-top: 20px
+    font-size: 17px
+    line-height: 26px
+    max-width: 500px
+    width: 50%
+    color: #d9fcff
+    
