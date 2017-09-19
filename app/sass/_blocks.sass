@@ -2,7 +2,7 @@
     padding: 0
     margin: 0
     box-sizing: border-box
-    font-family: 'Open Sans', sans-serif
+    font-family: 'CamphorStd','Open Sans', sans-serif
 
 a
     text-decoration: none
@@ -10,14 +10,14 @@ a
 ul
     list-style: none
 
-main
+.container
     max-width: 1040px
     padding: 20px 20px 0 20px
     margin: 0 auto
-    
 
 
-#stripes
+
+.stripes
     width: 100%
     height: 760px
     display: grid
@@ -29,7 +29,7 @@ main
     grid-template-columns: repeat(12, 1fr)
     background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%)
 
-#main-nav
+.main-nav
     display: grid
     line-height: 30px
     grid-template-columns: 25% 50% 1fr
@@ -41,12 +41,16 @@ main
     color: #ffffff
     // position: relative
     
-#primary
+.primary
     position: relative
     top: 260px
     padding-top: 60px
 
-#primary__second--skew 
+.primary__first 
+    max-width: 50%
+
+
+.primary__second--skew 
     transform: skewY(-12deg)
     content: ""
     position: relative
@@ -56,5 +60,5 @@ main
     top: 0
     background: #f6f9fc
 
-#primary__second
+.primary__second
     transform: skewY(12deg)
