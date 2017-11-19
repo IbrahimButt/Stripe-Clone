@@ -8,82 +8,87 @@ html
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Poppins")
     title Plasso
   body
-    //- Do header later on
-    section.header
-      h1 Plasso
-      nav.header-nav.header-nav__main
-        ul
-          li
-          li
-          li
-          li
+    .main-grid
+        section.header
+          .wrap
+            h1 Plasso
+            nav.header-nav.header-nav__main
+              //- ul
+              //-   li
+              //-   li
+              //-   li
+              //-   li
 
-    section.hero
-      h2 Payments Made Simple
-      p Sell and accept payments online
-      p No coding or website building necessary
-      
-      = "\n"
-      a.button.button--outlined(href="#") Watch Film
-      = "\n"
-      a.button.button--filled(href="#") Start Making Money
+        section.hero
+          .wrap
+            h2 Payments Made Simple
+            p Sell and accept payments online
+            p No coding or website building necessary
 
-    section.latest-news
-      a(href="#") We've just launched our new WordPress plugin and free themes!
-
-    section.selling-points
-      .text-block
-        h4 Hassle-free recurring billing
-        p Get recurring billing for your business setup in a few minutes. No coding neccessary. Plasso will manage your payments, customers and user authentication all automatically.
-        a(href="#") Learn More
-
-      .text-block
-        h4 Plasso: a business platform
-        p Sell your services and subscriptions. Sell physical and digital goods. Send invoices. Get paid. Plasso makes it easy to start and grow your own business
-        a(href="#") Get Started
-
-    footer
-      .footer__main
-        .footer__block
-          h5 Products
-          ul
-            li Storefront
-            li Membership
-            li Invoice
-            li Billing
-            li Pay Me
-        .footer__block
-          h5 Platform
-          ul
-            li Support
-            li Pricing
-            li Market
-            li Terms
-            li Customers
-            li WordPress
-            li Privacy Policy
-        .footer__block
-          h5 Company
-          ul
-            li About
-            li Contact Support
-            li Instagram
-            li Pinterest
-            li Blog
-            li Twitter
-            li Facebook
-            li YouTube
-      .footer__small
-        .wrapped
-          p
-            | Copyright © 2012-201 
-            a(href="#") Plasso Inc.
-            | All rights reserved.
-          nav
             = "\n"
-            a.button(href="#") Log In
+            a.button.button--outlined(href="#") Watch Film
             = "\n"
-            a.button.button--outlined(href="#") Sign Up
+            a.button.button--filled(href="#") Start Making Money
 
-              
-          
+        section.updates
+          .wrap
+            a(href="#") We've just launched our new WordPress plugin and free themes!
+
+        section.selling-points
+          .wrap
+            .text-block
+              h4 Hassle-free recurring billing
+              p Get recurring billing for your business setup in a few minutes. No coding neccessary. Plasso will manage your payments, customers and user authentication all automatically.
+              a(href="#") Learn More
+
+            .text-block
+              h4 Plasso: a business platform
+              p Sell your services and subscriptions. Sell physical and digital goods. Send invoices. Get paid. Plasso makes it easy to start and grow your own business
+              a(href="#") Get Started
+
+        footer
+          .footer__main
+            .wrap
+              .footer__block
+                h5 Products
+                ul
+                  li Storefront
+                  li Membership
+                  li Invoice
+                  li Billing
+                  li Pay Me
+              .footer__block
+                h5 Platform
+                ul
+                  li Support
+                  li Pricing
+                  li Market
+                  li Terms
+                  li Customers
+                  li WordPress
+                  li Privacy Policy
+              .footer__block
+                h5 Company
+                ul
+                  li About
+                  li Contact Support
+                  li Instagram
+                  li Pinterest
+                  li Blog
+                  li Twitter
+                  li Facebook
+                  li YouTube
+          .footer__small
+            .wrap
+              p
+                | Copyright © 2012-201
+                a(href="#") Plasso Inc.
+                | All rights reserved.
+              nav
+                = "\n"
+                a.button(href="#") Log In
+                = "\n"
+                a.button.button--outlined(href="#") Sign Up
+
+
+
