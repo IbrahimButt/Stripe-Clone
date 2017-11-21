@@ -1,14 +1,27 @@
+
+@font-face
+  font-family: "CalibreWeb"
+  font-style: normal
+  font-weight: 200
+  src: url("../font/CalibreWeb-Light.eot?#iefix") format("embedded-opentype"), url("../font/CalibreWeb-Light.woff2") format("woff2"), url("../font/CalibreWeb-Light.woff") format("woff")
+
+
 $text-normal: #768093
+$body-bg: transparent url(../images/bg-texture.png) repeat top left
+$footer-main-bg: #f3f4f8 url(../images/bg-texture.png) repeat top left
+$footer-small-bg: #ecedf2 url(../images/bg-texture.png) repeat top left
 
 *
   padding: 0
   margin: 0
   box-sizing: border-box
+  font-family: CalibreWeb
 
 .main-grid
   display: grid
   grid-template-columns: 100%
   grid-template-rows: 50px 100vh 200px 500px 300px
+  background: $body-bg
 
 .wrap
   // Final max-width, 1440px
@@ -18,34 +31,22 @@ $text-normal: #768093
   margin: auto
 
 .hero
-  background-color: #114B5F
+  // background-color: #114B5F
   .wrap
-    background-color: #104557
+    // background-color: #104557
 
 .updates
-  background-color: #028090
+  // background-color: #028090
   .wrap
-    background-color: #198B9A
+    // background-color: #198B9A
 
 .selling-points
-  background-color: #E4FDE1
+  // background-color: #E4FDE1
   .wrap
     max-width: 880px
     background-color: #D0E6CD
 
 footer
-  background-color: #456990
   display: grid
   grid-template-columns: 100%
   grid-template-rows: 80% 20%
-
-  .footer__main
-    background-color: #55769A
-    .wrap
-      display: grid
-      grid-template-columns: 1fr 1fr 1fr
-      grid-template-rows: 100%
-  .footer__small
-    background-color: #456990
-    .wrap
-      background-color: #3F6083
