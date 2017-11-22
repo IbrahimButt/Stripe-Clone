@@ -33,10 +33,14 @@ footer {
 
 .footer__main {
   background: #f3f4f8 url(../images/bg-texture.png) repeat top left; }
-  .footer__main .wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100%; }
 
 .footer__small {
   background: #ecedf2 url(../images/bg-texture.png) repeat top left; }
+
+.footer__main .wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100%; }
+
+.footer__main .block li {
+  list-style: none; }
