@@ -1,0 +1,1 @@
+When something appears to be jagged, for example the sign up button in the footer, applying an opacity can soften it.
