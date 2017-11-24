@@ -71,7 +71,7 @@ footer {
   border-radius: 3px;
   color: #3e70ff;
   display: inline-block;
-  letter-spacing: 0.15em; }
+  letter-spacing: 0.115em; }
 
 .footer__main .wrap {
   display: grid;
@@ -99,13 +99,16 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto; }
+  .footer__small .wrap nav {
+    justify-self: end; }
 
 .footer__small p {
   font-size: 14px;
   font-weight: 400;
   margin-top: 13px; }
 
-.footer__small a {
+.footer__small .copyright-link {
+  color: #1d1d1f;
   text-decoration: none; }
 
 .button.big {
