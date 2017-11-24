@@ -8,19 +8,21 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: CalibreWeb; }
+  font-family: CalibreWeb;
+  font-size: 100%; }
 
 .main-grid {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 50px 100vh 200px 500px 300px;
+  grid-template-rows: 50px 100vh 200px 500px auto;
   background: transparent url(../images/bg-texture.png) repeat top left;
   background-size: 164px 72px;
   font-size: 18px;
   color: #768093;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.01em; }
 
 .wrap {
   max-width: 1100px;
@@ -35,7 +37,7 @@
 footer {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto 20%; }
+  grid-template-rows: auto auto; }
 
 .footer__main {
   background: #f3f4f8 url(../images/bg-texture.png) repeat top left;
@@ -47,6 +49,15 @@ footer {
   background-size: 164px 72px;
   padding: 20px 0 20px 0; }
 
+.button {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #3e70ff;
+  display: inline-block;
+  letter-spacing: 0.15em; }
+
 .footer__main .wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -57,7 +68,7 @@ footer {
 .footer__main .block li {
   list-style: none;
   font-size: 14px;
-  font-weight: normal; }
+  margin-bottom: 15px; }
 
 .footer__main h5 {
   font-size: 14px;
@@ -76,4 +87,16 @@ footer {
 
 .footer__small p {
   font-size: 14px;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-top: 13px; }
+
+.button.big {
+  padding: 23px 30px;
+  font-size: 170px; }
+
+.button.small {
+  padding: 15px 22px;
+  font-size: 14px; }
+
+.button.outlined {
+  border: 1px solid #3e70ff; }
