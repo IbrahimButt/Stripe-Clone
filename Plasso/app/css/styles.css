@@ -68,7 +68,7 @@ footer {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 3px;
   color: #3e70ff;
   display: inline-block;
   letter-spacing: 0.15em; }
@@ -113,8 +113,8 @@ footer {
   font-size: 170px; }
 
 .button.small {
-  padding: 15px 22px;
+  padding: 13px 22px;
   font-size: 14px; }
 
 .button.outlined {
-  border: 1px solid #3e70ff; }
+  border: 1px solid rgba(62, 112, 255, 0.5); }
