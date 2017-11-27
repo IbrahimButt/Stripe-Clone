@@ -80,10 +80,15 @@ footer {
   grid-column-gap: 7.5%;
   max-width: 1100px; }
 
+.footer__main__list-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1fr; }
+
 .footer__main .block li {
   list-style: none;
   font-size: 14px;
-  margin-bottom: 15px; }
+  margin-bottom: 13px; }
 
 .footer__main h5 {
   font-size: 14px;
@@ -91,8 +96,8 @@ footer {
   font-weight: bold;
   letter-spacing: 0.1em;
   color: #abb1b7;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
   border-bottom: 1px solid #dde1e5; }
 
 .footer__small .wrap {
@@ -105,7 +110,7 @@ footer {
 .footer__small p {
   font-size: 14px;
   font-weight: 400;
-  margin-top: 13px; }
+  margin-top: 14px; }
 
 .footer__small .copyright-link {
   color: #1d1d1f;
@@ -116,7 +121,7 @@ footer {
   font-size: 170px; }
 
 .button.small {
-  padding: 13px 22px;
+  padding: 13.5px 22px;
   font-size: 14px; }
 
 .button.outlined {
