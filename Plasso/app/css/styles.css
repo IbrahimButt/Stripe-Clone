@@ -26,6 +26,10 @@
   font-family: CalibreWeb;
   font-size: 100%; }
 
+a {
+  text-decoration: none;
+  color: #3e70ff; }
+
 .main-grid {
   display: grid;
   grid-template-columns: 100%;
@@ -79,6 +83,13 @@ footer {
   padding-bottom: 140px;
   padding-top: 90px;
   line-height: 1.3em; }
+
+.selling-points h4 {
+  font-size: 24px;
+  color: #1d1d1f; }
+
+.selling-points p {
+  margin: 20px  0; }
 
 .footer__main .wrap {
   display: grid;
