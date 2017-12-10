@@ -33,7 +33,7 @@ a {
 .main-grid {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 50px 100vh auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   background: transparent url(../images/bg-texture.png) repeat top left;
   background-size: 164px 72px;
   font-size: 18px;
@@ -42,6 +42,11 @@ a {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   letter-spacing: 0.01em; }
+
+.hero .wrap {
+  padding-top: 190px;
+  padding-bottom: 190px;
+  text-align: center; }
 
 .updates .wrap {
   text-align: center;
@@ -87,6 +92,19 @@ footer {
   color: #3e70ff;
   display: inline-block;
   letter-spacing: 0.115em; }
+
+.hero h2 {
+  font-size: 54px;
+  color: #1d1d1f;
+  font-weight: normal; }
+
+.hero p {
+  font-size: 26px;
+  font-weight: 200; }
+  .hero p:first-of-type {
+    margin-top: 40px; }
+  .hero p:last-of-type {
+    margin-bottom: 55px; }
 
 .updates span {
   background-color: #3e70ff;
@@ -161,7 +179,7 @@ footer {
 
 .button.big {
   padding: 23px 30px;
-  font-size: 170px; }
+  font-size: 17px; }
 
 .button.small {
   padding: 13.5px 22px;
@@ -169,3 +187,7 @@ footer {
 
 .button.outlined {
   border: 1px solid rgba(62, 112, 255, 0.5); }
+
+.button.filled {
+  color: #FFFFFF;
+  background-image: linear-gradient(#2083fe, #1d7bf0); }
