@@ -33,7 +33,7 @@ a {
 .main-grid {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
   background: transparent url(../images/bg-texture.png) repeat top left;
   background-size: 164px 72px;
   font-size: 18px;
@@ -44,7 +44,7 @@ a {
   letter-spacing: 0.01em; }
 
 .hero .wrap {
-  padding-top: 190px;
+  padding-top: 240px;
   padding-bottom: 190px;
   text-align: center; }
 
@@ -177,8 +177,11 @@ footer {
   color: #1d1d1f;
   text-decoration: none; }
 
+.button:first-of-type {
+  margin-right: 24px; }
+
 .button.big {
-  padding: 23px 30px;
+  padding: 21px 30px;
   font-size: 17px; }
 
 .button.small {
