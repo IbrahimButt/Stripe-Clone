@@ -33,7 +33,7 @@ a {
 .main-grid {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: 100vh auto auto auto;
   background: transparent url(../images/bg-texture.png) repeat top left;
   background-size: 164px 72px;
   font-size: 18px;
@@ -54,7 +54,7 @@ a {
 
 .updates p {
   background-color: #f5f6f8;
-  display: inline;
+  display: inline-block;
   padding: 5px 10px;
   -moz-border-radius: 14px;
   -webkit-border-radius: 14px;
@@ -107,17 +107,24 @@ footer {
     margin-bottom: 55px; }
 
 .updates span {
+  position: relative;
+  top: -1.4px;
   background-color: #3e70ff;
   padding: 2px 5px;
   font-size: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  margin-right: 10px;
+  margin-right: 7px;
+  margin-left: -3px;
   color: #ffffff;
   font-weight: bold;
   font-size: 10px;
   text-transform: uppercase; }
+
+.updates p {
+  position: relative;
+  top: -1.8px; }
 
 .selling-points .wrap {
   display: grid;
