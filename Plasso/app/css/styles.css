@@ -43,25 +43,15 @@ a {
   text-rendering: optimizeLegibility;
   letter-spacing: 0.01em; }
 
-.hero .wrap {
-  padding-top: 240px;
-  padding-bottom: 190px;
+.hero {
   text-align: center; }
 
-.updates .wrap {
-  text-align: center;
-  font-size: 14px; }
+.updates {
+  font-size: 14px;
+  text-align: center; }
 
-.updates p {
-  background-color: #f5f6f8;
-  display: inline-block;
-  padding: 5px 10px;
-  -moz-border-radius: 14px;
-  -webkit-border-radius: 14px;
-  border-radius: 14px; }
-
-.selling-points .wrap {
-  max-width: 880px; }
+.selling-points {
+  line-height: 1.3em; }
 
 footer {
   display: grid;
@@ -124,15 +114,13 @@ footer {
 
 .updates p {
   position: relative;
-  top: -1.8px; }
-
-.selling-points .wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 16%;
-  padding-bottom: 140px;
-  padding-top: 90px;
-  line-height: 1.3em; }
+  top: -1.8px;
+  background-color: #f5f6f8;
+  display: inline-block;
+  padding: 5px 10px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  border-radius: 14px; }
 
 .selling-points h4 {
   font-size: 24px;
@@ -140,13 +128,6 @@ footer {
 
 .selling-points p {
   margin: 20px  0; }
-
-.footer__main .wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-column-gap: 7.5%;
-  max-width: 1100px; }
 
 .footer__main__list-wrap {
   display: grid;
@@ -184,6 +165,25 @@ footer {
   color: #1d1d1f;
   text-decoration: none; }
 
+.hero .wrap {
+  padding-top: 240px;
+  padding-bottom: 190px; }
+
+.selling-points .wrap {
+  max-width: 880px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16%;
+  padding-top: 90px;
+  padding-bottom: 140px; }
+
+.footer__main .wrap {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 7.5%; }
+
 .button:first-of-type {
   margin-right: 24px; }
 
@@ -201,3 +201,6 @@ footer {
 .button.filled {
   color: #FFFFFF;
   background-image: linear-gradient(#2083fe, #1d7bf0); }
+
+.button.drop-shadow {
+  box-shadow: rgba(23, 43, 99, 0.26) 0px 7px 42px 0px; }
