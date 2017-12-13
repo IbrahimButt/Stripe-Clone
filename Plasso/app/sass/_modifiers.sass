@@ -20,6 +20,12 @@
     grid-template-rows: auto
     grid-column-gap: 7.5%
 
+.footer__small
+  .wrap
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: auto
+
 .button
   &:first-of-type
     margin-right: 24px
@@ -32,8 +38,8 @@
   &.outlined
     border: 1px solid $button-border-color
   &.filled
-    color: #FFFFFF
+    color: white
     background-image: $filled-button-bg
   &.drop-shadow
-    box-shadow: rgba(23, 43, 99, 0.26) 0px 7px 42px 0px
+    box-shadow: $button-dropshadow
   

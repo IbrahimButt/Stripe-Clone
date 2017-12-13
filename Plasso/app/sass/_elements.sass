@@ -22,7 +22,7 @@
   p
     font-size: 26px
     font-weight: 200
-  
+    
     &:first-of-type
       margin-top: 40px
 
@@ -33,7 +33,7 @@
   span
     position: relative
     top: -1.4px
-    background-color: #3e70ff
+    background-color: $updates-pill
     padding: 2px 5px
     font-size: 10px
     -moz-border-radius: 10px
@@ -41,11 +41,10 @@
     border-radius: 10px
     margin-right: 7px
     margin-left: -3px
-    color: #ffffff
+    color: white
     font-weight: bold
     font-size: 10px
     text-transform: uppercase
-    
   p
     position: relative
     top: -1.8px
@@ -68,7 +67,6 @@
     display: grid
     grid-template-columns: 1fr 1fr
     grid-column-gap: 1fr
-
   .block
     li
       list-style: none
@@ -86,16 +84,12 @@
     border-bottom: 1px solid rgb(221, 225, 229)
 
 .footer__small
-  .wrap
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: auto
-    nav
-      justify-self: end
+  nav
+    justify-self: end
   p
     font-size: 14px
     font-weight: 400
     margin-top: 14px
   .copyright-link
-    color: #1d1d1f
+    color: $text-black
     text-decoration: none

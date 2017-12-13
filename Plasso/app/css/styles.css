@@ -59,14 +59,14 @@ footer {
   grid-template-rows: auto auto; }
 
 .footer__main {
+  padding: 80px 0 60px 0;
   background: #f3f4f8 url(../images/bg-texture.png) repeat top left;
-  background-size: 164px 72px;
-  padding: 80px 0 60px 0; }
+  background-size: 164px 72px; }
 
 .footer__small {
+  padding: 20px 0 20px 0;
   background: #ecedf2 url(../images/bg-texture.png) repeat top left;
-  background-size: 164px 72px;
-  padding: 20px 0 20px 0; }
+  background-size: 164px 72px; }
 
 .wrap {
   max-width: 1100px;
@@ -107,7 +107,7 @@ footer {
   border-radius: 10px;
   margin-right: 7px;
   margin-left: -3px;
-  color: #ffffff;
+  color: white;
   font-weight: bold;
   font-size: 10px;
   text-transform: uppercase; }
@@ -149,12 +149,8 @@ footer {
   margin-bottom: 14px;
   border-bottom: 1px solid #dde1e5; }
 
-.footer__small .wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto; }
-  .footer__small .wrap nav {
-    justify-self: end; }
+.footer__small nav {
+  justify-self: end; }
 
 .footer__small p {
   font-size: 14px;
@@ -184,6 +180,11 @@ footer {
   grid-template-rows: auto;
   grid-column-gap: 7.5%; }
 
+.footer__small .wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto; }
+
 .button:first-of-type {
   margin-right: 24px; }
 
@@ -199,7 +200,7 @@ footer {
   border: 1px solid rgba(62, 112, 255, 0.5); }
 
 .button.filled {
-  color: #FFFFFF;
+  color: white;
   background-image: linear-gradient(#2083fe, #1d7bf0); }
 
 .button.drop-shadow {
