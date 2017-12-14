@@ -20,7 +20,7 @@ html
       //-   li
 
       section.hero
-        .wrap
+        .wrap.wrap--hero
           h2.hero__title Payments Made Simple
           p.hero__text Sell and accept payments online
           p.hero__text No coding or website building necessary
@@ -31,68 +31,88 @@ html
           a.button.big.filled.drop-shadow(href="#") Start Making Money
 
       section.updates
-        .wrap
+        .wrap.wrap--updates
           p.updates__pill
             span.updates__alert new
             a.updates__link(href="#") We've just launched our new WordPress plugin and free themes!
 
       section.selling-points
-        .wrap
-          .text-block
-            h4 Hassle-free recurring billing
-            p Get recurring billing for your business setup in a few minutes. No coding neccessary. Plasso will manage your payments, customers and user authentication all automatically.
+        .wrap.wrap--selling-points
+          .selling-points__block
+            h4.selling-points__title Hassle-free recurring billing
+            p.selling-points__text Get recurring billing for your business setup in a few minutes. No coding neccessary. Plasso will manage your payments, customers and user authentication all automatically.
             a(href="#") Learn More
 
-          .text-block
-            h4 Plasso: a business platform
-            p Sell your services and subscriptions. Sell physical and digital goods. Send invoices. Get paid. Plasso makes it easy to start and grow your own business.
+          .selling-points__block
+            h4.selling-points__title Plasso: a business platform
+            p.selling-points__text Sell your services and subscriptions. Sell physical and digital goods. Send invoices. Get paid. Plasso makes it easy to start and grow your own business.
             a(href="#") Get Started
 
       footer
         .footer__main
-          .wrap
-            .block
-              h5 Products
+          .wrap.wrap--footer__main
+            .footer__main__block
+              h5.footer__main__title Products
               .footer__main__list-wrap
                 ul
-                  li Storefront
-                  li Membership
-                  li Invoice
+                  li
+                    a(href="#") Storefront
+                  li
+                    a(href="#") Membership
+                  li
+                    a(href="#") Invoice
                 ul
-                  li Billing
-                  li Pay Me
-            .block
-              h5 Platform
+                  li
+                    a(href="#") Billing
+                  li
+                    a(href="#") Pay Me
+            .footer__main__block
+              h5.footer__main__title Platform
               .footer__main__list-wrap
                 ul
-                  li Support
-                  li Pricing
-                  li Market
-                  li Terms
+                  li
+                    a(href="#") Support
+                  li
+                    a(href="#") Pricing
+                  li
+                    a(href="#") Market
+                  li
+                    a(href="#") Terms
                 ul
-                  li Customers
-                  li WordPress
-                  li Privacy Policy
-            .block
-              h5 Company
+                  li
+                    a(href="#") Customers
+                  li
+                    a(href="#") WordPress
+                  li
+                    a(href="#") Privacy Policy
+            .footer__main__block
+              h5.footer__main__title Company
               .footer__main__list-wrap
                 ul
-                  li About
-                  li Contact Support
-                  li Instagram
-                  li Pinterest
+                  li
+                    a(href="#") About
+                  li
+                    a(href="#") Contact Support
+                  li
+                    a(href="#") Instagram
+                  li
+                    a(href="#") Pinterest
                 ul
-                  li Blog
-                  li Twitter
-                  li Facebook
-                  li YouTube
+                  li
+                    a(href="#") Blog
+                  li
+                    a(href="#") Twitter
+                  li
+                    a(href="#") Facebook
+                  li 
+                    a(href="#") YouTube
         .footer__small
-          .wrap
-            p
+          .wrap.wrap--footer__small
+            p.footer__small__copyright
               | Copyright © 2012-2017 
-              a.copyright-link(href="#") Plasso, Inc. 
+              a.footer__small__copyright-link(href="#") Plasso, Inc. 
               | All rights reserved.
-            nav
+            nav.footer__small__nav
               = "\n"
               a.button.small(href="#") Log In
               = "\n"

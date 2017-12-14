@@ -24,7 +24,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: CalibreWeb;
-  font-size: 100%; }
+  font-size: 100%;
+  vertical-align: baseline; }
 
 a {
   text-decoration: none;
@@ -83,20 +84,20 @@ footer {
   display: inline-block;
   letter-spacing: 0.115em; }
 
-.hero h2 {
+.hero__title {
   font-size: 54px;
   color: #1d1d1f;
   font-weight: normal; }
 
-.hero p {
+.hero__text {
   font-size: 26px;
   font-weight: 200; }
-  .hero p:first-of-type {
+  .hero__text:first-of-type {
     margin-top: 40px; }
-  .hero p:last-of-type {
+  .hero__text:last-of-type {
     margin-bottom: 55px; }
 
-.updates span {
+.updates__alert {
   position: relative;
   top: -1.4px;
   background-color: #3e70ff;
@@ -112,7 +113,7 @@ footer {
   font-size: 10px;
   text-transform: uppercase; }
 
-.updates p {
+.updates__pill {
   position: relative;
   top: -1.8px;
   background-color: #f5f6f8;
@@ -122,11 +123,11 @@ footer {
   -webkit-border-radius: 14px;
   border-radius: 14px; }
 
-.selling-points h4 {
+.selling-points__title {
   font-size: 24px;
   color: #1d1d1f; }
 
-.selling-points p {
+.selling-points__text {
   margin: 20px  0; }
 
 .footer__main__list-wrap {
@@ -134,12 +135,15 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 1fr; }
 
-.footer__main .block li {
+.footer__main__block li {
   list-style: none;
   font-size: 14px;
   margin-bottom: 13px; }
 
-.footer__main h5 {
+.footer__main__block a {
+  color: #768093; }
+
+.footer__main__title {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
@@ -149,23 +153,23 @@ footer {
   margin-bottom: 14px;
   border-bottom: 1px solid #dde1e5; }
 
-.footer__small nav {
+.footer__small .footer__small__nav {
   justify-self: end; }
 
-.footer__small p {
+.footer__small__copyright {
   font-size: 14px;
   font-weight: 400;
   margin-top: 14px; }
 
-.footer__small .copyright-link {
+.footer__small__copyright-link {
   color: #1d1d1f;
   text-decoration: none; }
 
-.hero .wrap {
+.wrap--hero {
   padding-top: 240px;
   padding-bottom: 190px; }
 
-.selling-points .wrap {
+.wrap--selling-points {
   max-width: 880px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -173,14 +177,14 @@ footer {
   padding-top: 90px;
   padding-bottom: 140px; }
 
-.footer__main .wrap {
+.wrap--footer__main {
   max-width: 1100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-column-gap: 7.5%; }
 
-.footer__small .wrap {
+.wrap--footer__small {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto; }

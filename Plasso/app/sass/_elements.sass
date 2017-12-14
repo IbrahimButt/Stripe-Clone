@@ -15,22 +15,20 @@
   letter-spacing: 0.115em
 
 .hero
-  h2
+  &__title
     font-size: 54px
     color: $text-black
     font-weight: normal
-  p
+  &__text
     font-size: 26px
     font-weight: 200
-    
     &:first-of-type
       margin-top: 40px
-
     &:last-of-type
       margin-bottom: 55px
   
 .updates
-  span
+  &__alert
     position: relative
     top: -1.4px
     background-color: $updates-pill
@@ -45,7 +43,7 @@
     font-weight: bold
     font-size: 10px
     text-transform: uppercase
-  p
+  &__pill
     position: relative
     top: -1.8px
     background-color: #f5f6f8
@@ -56,10 +54,10 @@
     border-radius: 14px
 
 .selling-points
-  h4
+  &__title 
     font-size: 24px
     color: $text-black
-  p
+  &__text
     margin: 20px  0
 
 .footer__main
@@ -67,13 +65,15 @@
     display: grid
     grid-template-columns: 1fr 1fr
     grid-column-gap: 1fr
-  .block
+  &__block
     li
       list-style: none
       font-size: 14px
       font-weight:
       margin-bottom: 13px
-  h5
+    a
+      color: $text-normal-color
+  &__title
     font-size: 14px
     text-transform: uppercase
     font-weight: bold
@@ -84,12 +84,12 @@
     border-bottom: 1px solid rgb(221, 225, 229)
 
 .footer__small
-  nav
+  .footer__small__nav
     justify-self: end
-  p
+  &__copyright
     font-size: 14px
     font-weight: 400
     margin-top: 14px
-  .copyright-link
+  &__copyright-link
     color: $text-black
     text-decoration: none
