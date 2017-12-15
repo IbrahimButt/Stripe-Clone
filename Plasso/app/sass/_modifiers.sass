@@ -1,6 +1,15 @@
 .wrap--hero
   padding-top: 240px
   padding-bottom: 190px
+  @media screen and (max-width: 700px)
+    padding-top: 200px
+    padding-bottom: 120px
+  @media screen and (max-width: 400px)
+    padding-top: 170px
+
+.wrap--updates
+  display: grid
+  justify-self: center
 
 .wrap--selling-points
   max-width: 880px
@@ -9,6 +18,12 @@
   grid-column-gap: 16%
   padding-top: 90px
   padding-bottom: 140px
+  @media screen and (max-width: 700px)
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr 1fr
+    padding-top: 100px
+    padding-bottom: 80px
+
 
 .wrap--footer__main
   max-width: 1100px
@@ -16,15 +31,29 @@
   grid-template-columns: 1fr 1fr 1fr
   grid-template-rows: auto
   grid-column-gap: 7.5%
+  padding-top: 80px
+  padding-bottom: 60px
+  @media screen and (max-width: 700px)
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr 1fr 1fr
+    padding-top: 50px
+    padding-bottom: 50px
 
 .wrap--footer__small
     display: grid
     grid-template-columns: 1fr 1fr
     grid-template-rows: auto
+    padding-top: 20px
+    padding-bottom: 20px
+    @media screen and (max-width: 700px)
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr 1fr
 
 .button
   &:first-of-type
     margin-right: 24px
+    @media screen and (max-width: 500px)
+      margin-bottom: 30px
   &.big
     padding: 21px 30px
     font-size: 17px

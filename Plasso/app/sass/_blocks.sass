@@ -1,7 +1,7 @@
 .main-grid
   display: grid
   grid-template-columns: 100%
-  grid-template-rows: 100vh auto auto auto
+  grid-template-rows: auto auto auto auto
   background: $body-bg
   background-size: 164px 72px
   font-size: 18px
@@ -16,7 +16,9 @@
 
 .updates
   font-size: 14px
-  text-align: center
+  // text-align: center
+  // @media screen and (max-width: 700px)
+  //   grid-template-columns: 1fr
 
 .selling-points
   line-height: 1.3em
@@ -27,11 +29,9 @@ footer
   grid-template-rows: auto auto
 
 .footer__main
-  padding: 80px 0 60px 0
   background: $footer-main-bg
   background-size: 164px 72px
 
 .footer__small
-  padding: 20px 0 20px 0
   background: $footer-small-bg
   background-size: 164px 72px

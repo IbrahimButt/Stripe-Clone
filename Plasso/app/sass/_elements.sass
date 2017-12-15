@@ -19,9 +19,13 @@
     font-size: 54px
     color: $text-black
     font-weight: normal
+    @media screen and (max-width: 400px)
+      font-size: 34px
   &__text
     font-size: 26px
     font-weight: 200
+    @media screen and (max-width: 400px)
+      font-size: 20px
     &:first-of-type
       margin-top: 40px
     &:last-of-type
@@ -29,8 +33,7 @@
   
 .updates
   &__alert
-    position: relative
-    top: -1.4px
+    top: 0.2px
     background-color: $updates-pill
     padding: 2px 5px
     font-size: 10px
@@ -44,16 +47,21 @@
     font-size: 10px
     text-transform: uppercase
   &__pill
-    position: relative
-    top: -1.8px
     background-color: #f5f6f8
-    display: inline-block
+    display: grid
+    grid-template-columns: auto auto
     padding: 5px 10px
     -moz-border-radius: 14px
     -webkit-border-radius: 14px
     border-radius: 14px
+    justify-self: center
+    align-items: center
 
 .selling-points
+  &__block
+    @media screen and (max-width: 700px)
+      &:first-of-type
+        margin-bottom: 80px
   &__title 
     font-size: 24px
     color: $text-black
@@ -66,6 +74,11 @@
     grid-template-columns: 1fr 1fr
     grid-column-gap: 1fr
   &__block
+    // margin-bottom: 50px
+    @media screen and (max-width: 800px)
+      margin-bottom: 50px
+      &:last-of-type
+        margin-bottom: 0
     li
       list-style: none
       font-size: 14px
@@ -86,10 +99,17 @@
 .footer__small
   .footer__small__nav
     justify-self: end
+    @media screen and (max-width: 700px)
+      justify-self: normal
+      text-align: center
   &__copyright
     font-size: 14px
     font-weight: 400
-    margin-top: 14px
+    margin: 13px 0
+    @media screen and (max-width: 700px)
+      padding: 0 5%
+      text-align: center
+      margin-bottom: 30px
   &__copyright-link
     color: $text-black
     text-decoration: none
