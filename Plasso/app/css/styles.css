@@ -98,12 +98,17 @@ footer {
   .hero__text:last-of-type {
     margin-bottom: 55px; }
 
+.slides:hover .slides__bottom {
+  background-color: #c8f0da; }
+
+.slides:hover .slides__top {
+  background: linear-gradient(#3cd781, #21b88f 50%); }
+
 .slides__bottom {
   height: 100%;
   transform: skewY(-2deg);
   transform-origin: bottom left;
-  background-color: #f44c67;
-  opacity: .45; }
+  background-color: #ffd9df; }
 
 .slides__top {
   height: 90%;
@@ -111,7 +116,8 @@ footer {
   top: -90%;
   transform: skewY(-3.2deg);
   transform-origin: bottom left;
-  background: linear-gradient(#f44c67, #fb377f 50%); }
+  background: linear-gradient(#f44c67, #fb377f 50%);
+  transition-duration: 5s; }
 
 .updates__alert {
   top: 0.2px;
