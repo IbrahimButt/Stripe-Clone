@@ -30,26 +30,42 @@
       margin-bottom: 55px
 
 .slides:hover
-  .slides__bottom
+  .slides__background__bottom
     background-color: #c8f0da
-  .slides__top
+  .slides__background__top
     background: linear-gradient(#3cd781, #21b88f 50%)
+  .wrap--slides
+    margin-left: -100%
 
+.slides
+  &__background__bottom
+    height: 100%
+    transform: skewY(-2deg)
+    transform-origin: bottom left
+    background-color: $slides-background-top-1
 
-.slides__bottom
-  height: 100%
-  transform: skewY(-2deg)
-  transform-origin: bottom left
-  background-color: #ffd9df
+  &__background__top
+    height: 90%
+    position: relative
+    top: -90%
+    transform: skewY(-3.2deg)
+    transform-origin: bottom left
+    background: $slides-background-bottom-1
+    transition-duration: 5s
+  
+  &__block
+    padding: 65px 55px 55px 55px
+    background-color: white
+    border-radius: 4px
+    z-index: 1
+    box-shadow: $button-dropshadow
 
-.slides__top
-  height: 90%
-  position: relative
-  top: -90%
-  transform: skewY(-3.2deg)
-  transform-origin: bottom left
-  background: linear-gradient($slides-background-primary, $slides-background-secondary 50%)
-  transition-duration: 5s
+  &__block__title
+    font-size: 45px
+    font-weight: normal
+
+  &__block__text
+    width: 318px
 
 .updates
   &__alert
