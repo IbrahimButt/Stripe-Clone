@@ -103,24 +103,53 @@ footer {
 .slides__background__bottom {
   height: 100%;
   transform: skewY(-1.6deg);
-  transform-origin: bottom left;
-  background-color: #ffd9df; }
+  transform-origin: bottom left; }
+  .slides__background__bottom--membership {
+    height: 100%;
+    background-color: #ffd9df;
+    opacity: 0;
+    transition: 5s; }
+    .slides__background__bottom--membership.is-active {
+      opacity: 1; }
+  .slides__background__bottom--billing {
+    position: relative;
+    top: -100%;
+    height: 100%;
+    background-color: #c8f0da;
+    opacity: 0;
+    transition: 5s; }
+    .slides__background__bottom--billing.is-active {
+      opacity: 1; }
 
 .slides__background__top {
   height: 90%;
   position: relative;
   top: -90%;
   transform: skewY(-3.2deg);
-  transform-origin: bottom left;
-  background: linear-gradient(#f44c67, #fb377f 50%);
-  transition-duration: 5s; }
+  transform-origin: bottom left; }
+  .slides__background__top--membership {
+    height: 100%;
+    background: linear-gradient(#f44c67, #fb377f 50%);
+    opacity: 0;
+    transition: 5s; }
+    .slides__background__top--membership.is-active {
+      opacity: 1; }
+  .slides__background__top--billing {
+    position: relative;
+    top: -100%;
+    height: 100%;
+    background: linear-gradient(#3cd781, #21b88f 50%);
+    opacity: 0;
+    transition: 5s; }
+    .slides__background__top--billing.is-active {
+      opacity: 1; }
 
 .slides__block {
   padding: 55px 55px 55px 55px;
-  margin: 50px 0;
+  margin: 10% 0;
   background-color: white;
   border-radius: 4px;
-  z-index: 1;
+  z-index: 3;
   box-shadow: rgba(23, 43, 99, 0.26) 0px 7px 42px 0px; }
   .slides__block__title {
     font-size: 45px;
@@ -139,6 +168,20 @@ footer {
     font-weight: bold;
     text-align: right;
     display: block; }
+
+.slides__pagination {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2px;
+  grid-column-gap: 30px;
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  top: -215%; }
+  .slides__pagination__section {
+    background-color: #1d1d1f;
+    opacity: 0.1;
+    z-index: 1000; }
 
 .updates__alert {
   top: 0.2px;

@@ -21,9 +21,15 @@
       </section>
       <section class="slides">
         <div class="wrap--full-width wrap--slides__background">
-          <div class="slides__background__bottom"></div>
-          <div class="slides__background__top"></div>
-          <div class="wrap--slides">
+          <div class="slides__background__bottom">
+            <div class="slides__background__bottom--membership is-active" id="membershipBottom"></div>
+            <div class="slides__background__bottom--billing" id="billingBottom"></div>
+          </div>
+          <div class="slides__background__top">
+            <div class="slides__background__top--membership is-active" id="membershipTop"></div>
+            <div class="slides__background__top--billing" id="billingTop"></div>
+          </div>
+          <div class="wrap--slides" id="slides">
             <div class="slides__block">
               <h3 class="slides__block__title">Membership</h3>
               <h4 class="slides__block__sub-title">Create your own subscription business</h4>
@@ -36,6 +42,11 @@
             <div class="slides__block">
               <h3 class="slides__block__title">Storefront</h3>
             </div>
+          </div>
+          <div class="slides__pagination">
+            <div class="slides__pagination__section"></div>
+            <div class="slides__pagination__section"></div>
+            <div class="slides__pagination__section"></div>
           </div>
         </div>
       </section>
@@ -119,5 +130,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

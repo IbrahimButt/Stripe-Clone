@@ -33,8 +33,12 @@ html
       section.slides
         .wrap--full-width.wrap--slides__background
           .slides__background__bottom
+            .slides__background__bottom--membership.is-active#membershipBottom
+            .slides__background__bottom--billing#billingBottom
           .slides__background__top
-          .wrap--slides
+            .slides__background__top--membership.is-active#membershipTop
+            .slides__background__top--billing#billingTop
+          .wrap--slides#slides
             .slides__block
               h3.slides__block__title Membership
               h4.slides__block__sub-title Create your own subscription business
@@ -45,7 +49,10 @@ html
               p.slides__block__text Instantly create a pay-wall on your website using your own content. An entire customer billing, management, storage and authentication system ready to be embedded into your website.
             .slides__block
               h3.slides__block__title Storefront
-
+          .slides__pagination
+            .slides__pagination__section
+            .slides__pagination__section
+            .slides__pagination__section
 
       section.updates
         .wrap.wrap--updates
@@ -140,6 +147,7 @@ html
               a.button.small(href="#") Log In
               = "\n"
               a.button.small.outlined(href="#") Sign Up
+    script(src="script.js")
 
 
 
