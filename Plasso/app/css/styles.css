@@ -49,6 +49,10 @@ a {
 .hero {
   text-align: center; }
 
+.slides {
+  position: relative;
+  height: 500px; }
+
 .updates {
   font-size: 14px; }
 
@@ -101,20 +105,24 @@ footer {
     margin-bottom: 55px; }
 
 .slides__background__bottom {
-  height: 100%;
-  transform: skewY(-1.6deg);
-  transform-origin: bottom left; }
+  height: 340px;
+  width: 100%;
+  position: absolute;
+  transform: skewY(-1.5deg);
+  transform-origin: top left; }
   .slides__background__bottom--membership {
+    position: absolute;
     height: 100%;
+    width: 100%;
     background-color: #ffd9df;
     opacity: 0;
     transition: 5s; }
     .slides__background__bottom--membership.is-active {
       opacity: 1; }
   .slides__background__bottom--billing {
-    position: relative;
-    top: -100%;
+    position: absolute;
     height: 100%;
+    width: 100%;
     background-color: #c8f0da;
     opacity: 0;
     transition: 5s; }
@@ -122,22 +130,25 @@ footer {
       opacity: 1; }
 
 .slides__background__top {
-  height: 90%;
-  position: relative;
-  top: -90%;
-  transform: skewY(-3.2deg);
+  height: 170px;
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  transform: skewY(-3deg);
   transform-origin: bottom left; }
   .slides__background__top--membership {
+    position: absolute;
     height: 100%;
+    width: 100%;
     background: linear-gradient(#f44c67, #fb377f 50%);
     opacity: 0;
     transition: 5s; }
     .slides__background__top--membership.is-active {
       opacity: 1; }
   .slides__background__top--billing {
-    position: relative;
-    top: -100%;
+    position: absolute;
     height: 100%;
+    width: 100%;
     background: linear-gradient(#3cd781, #21b88f 50%);
     opacity: 0;
     transition: 5s; }
@@ -146,11 +157,11 @@ footer {
 
 .slides__block {
   padding: 55px 55px 55px 55px;
-  margin: 10% 0;
+  margin: 15% 0;
   background-color: white;
   border-radius: 4px;
   z-index: 3;
-  box-shadow: rgba(23, 43, 99, 0.26) 0px 7px 42px 0px; }
+  box-shadow: rgba(29, 29, 31, 0.15) 0px 10px 60px; }
   .slides__block__title {
     font-size: 45px;
     font-weight: normal; }
@@ -177,7 +188,7 @@ footer {
   width: 350px;
   margin: 0 auto;
   position: relative;
-  top: -215%; }
+  top: -52.5%; }
   .slides__pagination__section {
     background-color: #1d1d1f;
     opacity: 0.1;
@@ -285,15 +296,15 @@ footer {
       padding-top: 170px; } }
 
 .wrap--slides__background {
-  padding-bottom: 90px;
-  height: 420px; }
+  height: 340px; }
 
 .wrap--slides {
   width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: 100% 100% 100%;
   position: relative;
-  top: -220%;
+  top: -52%;
   justify-items: center;
   overflow: hidden; }
 

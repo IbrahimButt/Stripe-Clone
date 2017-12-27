@@ -39,21 +39,25 @@
 
 .slides
   &__background__bottom
-    height: 100%
-    transform: skewY(-1.6deg)
-    transform-origin: bottom left
+    height: 340px
+    width: 100%
+    position: absolute
+    transform: skewY(-1.5deg)
+    transform-origin: top left
     // z-index: 1
     &--membership
+      position: absolute
       height: 100%
+      width: 100%
       background-color: $slides-background-top-1
       opacity: 0
       transition: 5s
       &.is-active
         opacity: 1
     &--billing
-      position: relative
-      top: -100%
+      position: absolute
       height: 100%
+      width: 100%
       background-color: $slides-background-top-2
       opacity: 0
       transition: 5s
@@ -61,23 +65,25 @@
         opacity: 1
 
   &__background__top
-    height: 90%
-    position: relative
-    top: -90%
-    transform: skewY(-3.2deg)
+    height: 340px * .5
+    width: 100%
+    position: absolute
+    top: 10%
+    transform: skewY(-3deg)
     transform-origin: bottom left
-    // z-index: 2
     &--membership
+      position: absolute
       height: 100%
+      width: 100%
       background: $slides-background-bottom-1
       opacity: 0
       transition: 5s
       &.is-active
         opacity: 1
     &--billing
-      position: relative
-      top: -100%
+      position: absolute
       height: 100%
+      width: 100%
       background: $slides-background-bottom-2
       opacity: 0
       transition: 5s
@@ -86,11 +92,11 @@
   
   &__block
     padding: 55px 55px 55px 55px
-    margin: 10% 0
+    margin: 15% 0
     background-color: white
     border-radius: 4px
     z-index: 3
-    box-shadow: $button-dropshadow
+    box-shadow: rgba(29, 29, 31, 0.15) 0px 10px 60px
 
     &__title
       font-size: 45px
@@ -121,7 +127,7 @@
     width: 350px
     margin: 0 auto
     position: relative
-    top: -215%
+    top: -52.5%
     
     &__section
       background-color: #1d1d1f
