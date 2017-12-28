@@ -29,110 +29,146 @@
     &:last-of-type
       margin-bottom: 55px
 
-// .slides:hover
-//   .slides__background__bottom
-//     background-color: #c8f0da
-//   .slides__background__top
-//     background: linear-gradient(#3cd781, #21b88f 50%)
-//   .wrap--slides
-//     margin-left: -100%
-
-.slides
-  &__background__bottom
-    height: 340px
-    width: 100%
+.slider
+  &__backgrounds
     position: absolute
-    transform: skewY(-1.5deg)
-    transform-origin: top left
-    // z-index: 1
-    &--membership
-      position: absolute
-      height: 100%
-      width: 100%
-      background-color: $slides-background-top-1
-      opacity: 0
-      transition: 5s
-      &.is-active
-        opacity: 1
-    &--billing
-      position: absolute
-      height: 100%
-      width: 100%
-      background-color: $slides-background-top-2
-      opacity: 0
-      transition: 5s
-      &.is-active
-        opacity: 1
-
-  &__background__top
-    height: 340px * .5
+    height: 380px
     width: 100%
-    position: absolute
-    top: 10%
-    transform: skewY(-3deg)
-    transform-origin: bottom left
-    &--membership
-      position: absolute
-      height: 100%
-      width: 100%
-      background: $slides-background-bottom-1
+
+    &--membership--bottom
+      z-index: 1
+      background-color: $slides-background-bottom-membership
+      clip-path: polygon(0 11.4%, 100% 0%, 100% 88.9%, 0% 100%)
+      will-change: transform
       opacity: 0
-      transition: 5s
-      &.is-active
-        opacity: 1
-    &--billing
-      position: absolute
-      height: 100%
-      width: 100%
-      background: $slides-background-bottom-2
+      transition: opacity 1s linear
+
+    &--billing--bottom
+      background-color: $slides-background-bottom-billing
+      clip-path: polygon(0 11.4%, 100% 0%, 100% 88.9%, 0% 100%)
+      will-change: transform
       opacity: 0
-      transition: 5s
-      &.is-active
-        opacity: 1
-  
-  &__block
-    padding: 55px 55px 55px 55px
-    margin: 15% 0
-    background-color: white
-    border-radius: 4px
-    z-index: 3
-    box-shadow: rgba(29, 29, 31, 0.15) 0px 10px 60px
+      transition: opacity 1s linear
 
-    &__title
-      font-size: 45px
-      font-weight: normal
+    &--storefront--bottom
+      background-color: $slides-background-bottom-storefront
+      clip-path: polygon(0 11.4%, 100% 0%, 100% 88.9%, 0% 100%)
+      will-change: transform
+      opacity: 0
+      transition: opacity 1s linear
 
-    &__sub-title
-      font-size: 18px
-      font-weight: 200
-      margin-bottom: 75px
+    &--membership--top
+      z-index: 1
+      background: $slides-background-top-membership
+      clip-path: polygon(0 19.7%, 100% 0%, 100% 80.3%, 0% 100%)
+      will-change: transform
+      opacity: 0
+      transition: opacity 1s linear
 
-    &__text
-      font-size: 16px
-      width: 318px
-      margin-bottom: 30px
+    &--billing--top
+      background: $slides-background-top-billing
+      clip-path: polygon(0 19.7%, 100% 0%, 100% 80.3%, 0% 100%)
+      will-change: transform
+      opacity: 0
+      transition: opacity 1s linear
 
-    &__link
-      text-transform: uppercase
-      font-size: 14px
-      font-weight: bold
-      text-align: right
-      display: block
+    &--storefront--top
+      background: $slides-background-top-storefront
+      clip-path: polygon(0 19.7%, 100% 0%, 100% 80.3%, 0% 100%)
+      will-change: transform
+      opacity: 0
+      transition: opacity 1s linear
+
+  &__slides
+    position: relative
+    display: grid
+    grid-template-columns: 100% 100% 100%
+    justify-items: center
+    z-index: 1000
+    transition: transform 1s ease-in-out
+    will-change: transform
+
+    &__slide
+      background-color: white
+      margin: 0 auto 60px auto
+      padding: 55px 55px 55px 55px
+      box-shadow: rgba(29, 29, 31, 0.15) 0px 10px 60px
+
+      &__title
+        font-size: 45px
+        font-weight: normal
+
+      &__sub-title
+        font-size: 18px
+        font-weight: 200
+        margin-bottom: 75px
+
+      &__text
+        font-size: 16px
+        width: 318px
+        margin-bottom: 30px
+
+      &__link
+        text-transform: uppercase
+        font-size: 14px
+        font-weight: bold
+        text-align: right
+        display: block
 
   &__pagination
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    grid-template-rows: 2px
-    grid-column-gap: 30px
-    width: 350px
-    margin: 0 auto
-    position: relative
-    top: -52.5%
-    
+    display: block
+    text-align: center
+    margin-top: -15px
+
     &__section
-      background-color: #1d1d1f
+      display: inline-block
+      width: 100px
+      height: 2px
+      background-color: #1d1d1d
+      cursor: pointer
+      margin-right: 30px
+      overflow: hidden
+      will-change: transform
       opacity: 0.1
-      z-index: 1000
+      transition: opacity 0.5s linear
+
+
+      &:last-of-type
+        margin-right: 0
+
+#membershipSlide,
+#billingSlide,
+#storefrontSlide
+  position: absolute
+  left: -9999px
+
+#membershipSlide:checked
+  ~ .slider__backgrounds--membership--top,
+  ~ .slider__backgrounds--membership--bottom
+      opacity: 1
+  ~ .slider__slides 
+    transform: translateX(0%)
+  ~ .slider__pagination .slider__pagination__section--membership
+      opacity: 1
+
+#billingSlide:checked
+  ~ .slider__backgrounds--billing--top,
+  ~ .slider__backgrounds--billing--bottom
+      opacity: 1
+  ~ .slider__slides 
+    transform: translateX(-100%)
+  ~ .slider__pagination .slider__pagination__section--billing
+      opacity: 1
+
+#storefrontSlide:checked
+  ~ .slider__backgrounds--storefront--top,
+  ~ .slider__backgrounds--storefront--bottom
+      opacity: 1
+  ~ .slider__slides 
+    transform: translate(-200%)
+  ~ .slider__pagination .slider__pagination__section--storefront
+      opacity: 1
+
 
 .updates
   &__alert

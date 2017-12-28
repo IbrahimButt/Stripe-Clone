@@ -3,29 +3,18 @@
 
 .wrap--hero
   padding-top: 240px
-  padding-bottom: 275px
+  padding-bottom: 225px
   @media screen and (max-width: 700px)
     padding-top: 200px
     padding-bottom: 120px
   @media screen and (max-width: 400px)
     padding-top: 170px
-
-.wrap--slides__background
-  height: 340px
-
-.wrap--slides
-  width: 100%
-  height: auto
-  display: grid
-  grid-template-columns: 100% 100% 100%
-  position: relative
-  top: -52%
-  justify-items: center
-  overflow: hidden
   
 .wrap--updates
   display: grid
   justify-self: center
+  margin-top: 90px
+
 
 .wrap--selling-points
   max-width: 880px
@@ -84,3 +73,25 @@
   &.drop-shadow
     box-shadow: $button-dropshadow
   
+.slider__slides__slide
+  &__title
+    &--membership
+      color: #f44c67
+    &--billing
+      color: #2fca74
+    &--storefront
+      color: #4f5ef5
+  &__sub-title
+    &--membership
+      color: #f44c67
+    &--billing
+      color: #2fca74
+    &--storefront
+      color: #4f5ef5
+  &__link
+    &--membership
+      color: #f44c67
+    &--billing
+      color: #2fca74
+    &--storefront
+      color: #4f5ef5

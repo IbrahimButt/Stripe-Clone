@@ -19,35 +19,38 @@
 <a class="button big filled drop-shadow" href="#">Start Making Money</a>
         </div>
       </section>
-      <section class="slides">
-        <div class="wrap--full-width wrap--slides__background">
-          <div class="slides__background__bottom">
-            <div class="slides__background__bottom--membership is-active" id="membershipBottom"></div>
-            <div class="slides__background__bottom--billing" id="billingBottom"></div>
+      <section class="slider" id="slider">
+        <input type="radio" name="pagination" id="membershipSlide" checked="true">
+        <input type="radio" name="pagination" id="billingSlide">
+        <input type="radio" name="pagination" id="storefrontSlide">
+        <div class="slider__backgrounds slider__backgrounds--membership--bottom"></div>
+        <div class="slider__backgrounds slider__backgrounds--billing--bottom"></div>
+        <div class="slider__backgrounds slider__backgrounds--storefront--bottom"></div>
+        <div class="slider__backgrounds slider__backgrounds--membership--top"></div>
+        <div class="slider__backgrounds slider__backgrounds--billing--top"></div>
+        <div class="slider__backgrounds slider__backgrounds--storefront--top"></div>
+        <div class="slider__slides" id="slides">
+          <div class="slider__slides__slide">
+            <h3 class="slider__slides__slide__title slider__slides__slide__title--membership">Membership</h3>
+            <h4 class="slider__slides__slide__sub-title slider__slides__slide__sub-title--membership">Create your own subscription business</h4>
+            <p class="slider__slides__slide__text slider__slides__slide__text--membership">You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.</p><a class="slider__slides__slide__link slider__slides__slide__link--membership" href="#">Learn More</a>
           </div>
-          <div class="slides__background__top">
-            <div class="slides__background__top--membership is-active" id="membershipTop"></div>
-            <div class="slides__background__top--billing" id="billingTop"></div>
+          <div class="slider__slides__slide">
+            <h3 class="slider__slides__slide__title slider__slides__slide__title--billing">Billing</h3>
+            <h4 class="slider__slides__slide__sub-title slider__slides__slide__sub-title--billing">Create your own subscription business</h4>
+            <p class="slider__slides__slide__text slider__slides__slide__text--billing">You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.</p><a class="slider__slides__slide__link slider__slides__slide__link--billing" href="#">Learn More</a>
+          </div>
+          <div class="slider__slides__slide">
+            <h3 class="slider__slides__slide__title slider__slides__slide__title--storefront">Storefront
+              <h4 class="slider__slides__slide__sub-title slider__slides__slide__sub-title--storefront">Create your own subscription business</h4>
+              <p class="slider__slides__slide__text slider__slides__slide__text--storefront">You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.</p><a class="slider__slides__slide__link" href="#">Learn More</a>
+            </h3>
           </div>
         </div>
-        <div class="wrap--slides" id="slides">
-          <div class="slides__block">
-            <h3 class="slides__block__title">Membership</h3>
-            <h4 class="slides__block__sub-title">Create your own subscription business</h4>
-            <p class="slides__block__text">You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.</p><a class="slides__block__link" href="#">Learn More</a>
-          </div>
-          <div class="slides__block">
-            <h3 class="slides__block__title">Billing</h3>
-            <p class="slides__block__text">Instantly create a pay-wall on your website using your own content. An entire customer billing, management, storage and authentication system ready to be embedded into your website.</p>
-          </div>
-          <div class="slides__block">
-            <h3 class="slides__block__title">Storefront</h3>
-          </div>
-        </div>
-        <div class="slides__pagination">
-          <div class="slides__pagination__section"></div>
-          <div class="slides__pagination__section"></div>
-          <div class="slides__pagination__section"></div>
+        <div class="slider__pagination" id="sliderPagination">
+          <label class="slider__pagination__section slider__pagination__section--membership" id="membershipSection" for="membershipSlide">Membership</label>
+          <label class="slider__pagination__section slider__pagination__section--billing" id="billingSection" for="billingSlide">Billing</label>
+          <label class="slider__pagination__section slider__pagination__section--storefront" id="storefrontSection" for="storefrontSlide">Storefront</label>
         </div>
       </section>
       <section class="updates">

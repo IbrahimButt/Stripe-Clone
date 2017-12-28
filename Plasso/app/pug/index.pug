@@ -30,29 +30,36 @@ html
           = "\n"
           a.button.big.filled.drop-shadow(href="#") Start Making Money
 
-      section.slides
-        .wrap--full-width.wrap--slides__background
-          .slides__background__bottom
-            .slides__background__bottom--membership.is-active#membershipBottom
-            .slides__background__bottom--billing#billingBottom
-          .slides__background__top
-            .slides__background__top--membership.is-active#membershipTop
-            .slides__background__top--billing#billingTop
-        .wrap--slides#slides
-          .slides__block
-            h3.slides__block__title Membership
-            h4.slides__block__sub-title Create your own subscription business
-            p.slides__block__text You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.
-            a.slides__block__link(href="#") Learn More
-          .slides__block
-            h3.slides__block__title Billing
-            p.slides__block__text Instantly create a pay-wall on your website using your own content. An entire customer billing, management, storage and authentication system ready to be embedded into your website.
-          .slides__block
-            h3.slides__block__title Storefront
-        .slides__pagination
-          .slides__pagination__section
-          .slides__pagination__section
-          .slides__pagination__section
+      section.slider#slider
+        input(type="radio", name="pagination" id="membershipSlide", checked="true")
+        input(type="radio", name="pagination" id="billingSlide")
+        input(type="radio", name="pagination" id="storefrontSlide")
+        .slider__backgrounds.slider__backgrounds--membership--bottom
+        .slider__backgrounds.slider__backgrounds--billing--bottom
+        .slider__backgrounds.slider__backgrounds--storefront--bottom
+        .slider__backgrounds.slider__backgrounds--membership--top
+        .slider__backgrounds.slider__backgrounds--billing--top
+        .slider__backgrounds.slider__backgrounds--storefront--top
+        .slider__slides#slides
+          .slider__slides__slide
+            h3.slider__slides__slide__title.slider__slides__slide__title--membership Membership
+            h4.slider__slides__slide__sub-title.slider__slides__slide__sub-title--membership Create your own subscription business
+            p.slider__slides__slide__text.slider__slides__slide__text--membership You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.
+            a.slider__slides__slide__link.slider__slides__slide__link--membership(href="#") Learn More
+          .slider__slides__slide
+            h3.slider__slides__slide__title.slider__slides__slide__title--billing Billing
+            h4.slider__slides__slide__sub-title.slider__slides__slide__sub-title--billing Create your own subscription business
+            p.slider__slides__slide__text.slider__slides__slide__text--billing You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.
+            a.slider__slides__slide__link.slider__slides__slide__link--billing(href="#") Learn More
+          .slider__slides__slide
+            h3.slider__slides__slide__title.slider__slides__slide__title--storefront Storefront
+              h4.slider__slides__slide__sub-title.slider__slides__slide__sub-title--storefront Create your own subscription business
+              p.slider__slides__slide__text.slider__slides__slide__text--storefront You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.
+              a.slider__slides__slide__link(href="#") Learn More
+        .slider__pagination#sliderPagination
+            label.slider__pagination__section.slider__pagination__section--membership#membershipSection(for="membershipSlide") Membership
+            label.slider__pagination__section.slider__pagination__section--billing#billingSection(for="billingSlide") Billing
+            label.slider__pagination__section#storefrontSection.slider__pagination__section--storefront(for="storefrontSlide") Storefront
 
       section.updates
         .wrap.wrap--updates
