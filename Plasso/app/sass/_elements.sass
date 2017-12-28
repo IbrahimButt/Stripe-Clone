@@ -34,50 +34,35 @@
     position: absolute
     height: 380px
     width: 100%
+    will-change: transform
+    opacity: 0
+    transition: opacity 1s linear
 
-    &--membership--bottom
-      z-index: 1
-      background-color: $slides-background-bottom-membership
+    &--bottom
       clip-path: polygon(0 11.4%, 100% 0%, 100% 88.9%, 0% 100%)
-      will-change: transform
-      opacity: 0
-      transition: opacity 1s linear
+    
+      &--membership
+        z-index: 1
+        background-color: $slides-background-bottom-membership
 
-    &--billing--bottom
-      background-color: $slides-background-bottom-billing
-      clip-path: polygon(0 11.4%, 100% 0%, 100% 88.9%, 0% 100%)
-      will-change: transform
-      opacity: 0
-      transition: opacity 1s linear
+      &--billing
+        background-color: $slides-background-bottom-billing
 
-    &--storefront--bottom
-      background-color: $slides-background-bottom-storefront
-      clip-path: polygon(0 11.4%, 100% 0%, 100% 88.9%, 0% 100%)
-      will-change: transform
-      opacity: 0
-      transition: opacity 1s linear
+      &--storefront
+        background-color: $slides-background-bottom-storefront
 
-    &--membership--top
-      z-index: 1
-      background: $slides-background-top-membership
+    &--top
       clip-path: polygon(0 19.7%, 100% 0%, 100% 80.3%, 0% 100%)
-      will-change: transform
-      opacity: 0
-      transition: opacity 1s linear
 
-    &--billing--top
-      background: $slides-background-top-billing
-      clip-path: polygon(0 19.7%, 100% 0%, 100% 80.3%, 0% 100%)
-      will-change: transform
-      opacity: 0
-      transition: opacity 1s linear
+      &--membership
+        z-index: 1
+        background: $slides-background-top-membership
 
-    &--storefront--top
-      background: $slides-background-top-storefront
-      clip-path: polygon(0 19.7%, 100% 0%, 100% 80.3%, 0% 100%)
-      will-change: transform
-      opacity: 0
-      transition: opacity 1s linear
+      &--billing
+        background: $slides-background-top-billing
+
+      &--storefront
+        background: $slides-background-top-storefront
 
   &__slides
     position: relative
@@ -131,8 +116,7 @@
       will-change: transform
       opacity: 0.1
       transition: opacity 0.5s linear
-
-
+      
       &:last-of-type
         margin-right: 0
 
@@ -143,8 +127,8 @@
   left: -9999px
 
 #membershipSlide:checked
-  ~ .slider__backgrounds--membership--top,
-  ~ .slider__backgrounds--membership--bottom
+  ~ .slider__backgrounds--top--membership,
+  ~ .slider__backgrounds--bottom--membership
       opacity: 1
   ~ .slider__slides 
     transform: translateX(0%)
@@ -152,8 +136,8 @@
       opacity: 1
 
 #billingSlide:checked
-  ~ .slider__backgrounds--billing--top,
-  ~ .slider__backgrounds--billing--bottom
+  ~ .slider__backgrounds--top--billing,
+  ~ .slider__backgrounds--bottom--billing
       opacity: 1
   ~ .slider__slides 
     transform: translateX(-100%)
@@ -161,8 +145,8 @@
       opacity: 1
 
 #storefrontSlide:checked
-  ~ .slider__backgrounds--storefront--top,
-  ~ .slider__backgrounds--storefront--bottom
+  ~ .slider__backgrounds--top--storefront,
+  ~ .slider__backgrounds--bottom--storefront
       opacity: 1
   ~ .slider__slides 
     transform: translate(-200%)
