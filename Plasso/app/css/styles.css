@@ -112,23 +112,23 @@ footer {
   will-change: transform;
   opacity: 0;
   transition: opacity 1s linear; }
-  .slider__backgrounds--bottom {
+  .slider__backgrounds__bottom {
     clip-path: polygon(0 11.4%, 100% 0%, 100% 88.9%, 0% 100%); }
-    .slider__backgrounds--bottom--membership {
+    .slider__backgrounds__bottom--membership {
       z-index: 1;
       background-color: #ffd9df; }
-    .slider__backgrounds--bottom--billing {
+    .slider__backgrounds__bottom--billing {
       background-color: #c8f0da; }
-    .slider__backgrounds--bottom--storefront {
+    .slider__backgrounds__bottom--storefront {
       background-color: #d8e9ff; }
-  .slider__backgrounds--top {
+  .slider__backgrounds__top {
     clip-path: polygon(0 19.7%, 100% 0%, 100% 80.3%, 0% 100%); }
-    .slider__backgrounds--top--membership {
+    .slider__backgrounds__top--membership {
       z-index: 1;
       background: linear-gradient(#f44c67, #fb377f 50%); }
-    .slider__backgrounds--top--billing {
+    .slider__backgrounds__top--billing {
       background: linear-gradient(#3cd781, #21b88f 50%); }
-    .slider__backgrounds--top--storefront {
+    .slider__backgrounds__top--storefront {
       background: linear-gradient(#6472ff, #4a42e6 50%); }
 
 .slider__slides {
@@ -186,8 +186,8 @@ footer {
   position: absolute;
   left: -9999px; }
 
-#membershipSlide:checked ~ .slider__backgrounds--top--membership,
-#membershipSlide:checked ~ .slider__backgrounds--bottom--membership {
+#membershipSlide:checked ~ .slider__backgrounds__top--membership,
+#membershipSlide:checked ~ .slider__backgrounds__bottom--membership {
   opacity: 1; }
 
 #membershipSlide:checked ~ .slider__slides {
@@ -196,8 +196,8 @@ footer {
 #membershipSlide:checked ~ .slider__pagination .slider__pagination__section--membership {
   opacity: 1; }
 
-#billingSlide:checked ~ .slider__backgrounds--top--billing,
-#billingSlide:checked ~ .slider__backgrounds--bottom--billing {
+#billingSlide:checked ~ .slider__backgrounds__top--billing,
+#billingSlide:checked ~ .slider__backgrounds__bottom--billing {
   opacity: 1; }
 
 #billingSlide:checked ~ .slider__slides {
@@ -206,8 +206,8 @@ footer {
 #billingSlide:checked ~ .slider__pagination .slider__pagination__section--billing {
   opacity: 1; }
 
-#storefrontSlide:checked ~ .slider__backgrounds--top--storefront,
-#storefrontSlide:checked ~ .slider__backgrounds--bottom--storefront {
+#storefrontSlide:checked ~ .slider__backgrounds__top--storefront,
+#storefrontSlide:checked ~ .slider__backgrounds__bottom--storefront {
   opacity: 1; }
 
 #storefrontSlide:checked ~ .slider__slides {

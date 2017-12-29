@@ -38,7 +38,7 @@
     opacity: 0
     transition: opacity 1s linear
 
-    &--bottom
+    &__bottom
       clip-path: polygon(0 11.4%, 100% 0%, 100% 88.9%, 0% 100%)
     
       &--membership
@@ -51,7 +51,7 @@
       &--storefront
         background-color: $slides-background-bottom-storefront
 
-    &--top
+    &__top
       clip-path: polygon(0 19.7%, 100% 0%, 100% 80.3%, 0% 100%)
 
       &--membership
@@ -127,8 +127,8 @@
   left: -9999px
 
 #membershipSlide:checked
-  ~ .slider__backgrounds--top--membership,
-  ~ .slider__backgrounds--bottom--membership
+  ~ .slider__backgrounds__top--membership,
+  ~ .slider__backgrounds__bottom--membership
       opacity: 1
   ~ .slider__slides 
     transform: translateX(0%)
@@ -136,8 +136,8 @@
       opacity: 1
 
 #billingSlide:checked
-  ~ .slider__backgrounds--top--billing,
-  ~ .slider__backgrounds--bottom--billing
+  ~ .slider__backgrounds__top--billing,
+  ~ .slider__backgrounds__bottom--billing
       opacity: 1
   ~ .slider__slides 
     transform: translateX(-100%)
@@ -145,8 +145,8 @@
       opacity: 1
 
 #storefrontSlide:checked
-  ~ .slider__backgrounds--top--storefront,
-  ~ .slider__backgrounds--bottom--storefront
+  ~ .slider__backgrounds__top--storefront,
+  ~ .slider__backgrounds__bottom--storefront
       opacity: 1
   ~ .slider__slides 
     transform: translate(-200%)
