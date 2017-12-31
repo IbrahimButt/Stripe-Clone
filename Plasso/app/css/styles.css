@@ -34,6 +34,7 @@ a {
   color: #3e70ff; }
 
 .main-grid {
+  width: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto auto;
@@ -51,8 +52,9 @@ a {
   text-align: center; }
 
 .slider {
+  position: relative;
   width: 100%;
-  position: relative; }
+  margin: 50px 0; }
 
 .updates {
   font-size: 14px; }
@@ -109,9 +111,9 @@ footer {
   position: absolute;
   height: 380px;
   width: 100%;
-  will-change: transform;
   opacity: 0;
-  transition: opacity 1s linear; }
+  transition: opacity 1s linear;
+  will-change: opacity; }
   .slider__backgrounds__bottom {
     clip-path: polygon(0 11.4%, 100% 0%, 100% 88.9%, 0% 100%); }
     .slider__backgrounds__bottom--membership {
@@ -132,29 +134,44 @@ footer {
       background: linear-gradient(#6472ff, #4a42e6 50%); }
 
 .slider__slides {
-  position: relative;
   display: grid;
   grid-template-columns: 100% 100% 100%;
-  justify-items: center;
-  z-index: 1000;
   transition: transform 1s ease-in-out;
-  will-change: transform; }
+  will-change: transform;
+  height: 380px;
+  z-index: 1000; }
   .slider__slides__slide {
     background-color: white;
-    margin: 0 auto 60px auto;
-    padding: 55px 55px 55px 55px;
-    box-shadow: rgba(29, 29, 31, 0.15) 0px 10px 60px; }
+    margin: auto auto;
+    padding: 12% 55px 12% 55px;
+    box-shadow: rgba(29, 29, 31, 0.15) 0px 10px 60px;
+    max-height: 380px; }
+    @media screen and (max-width: 500px) {
+      .slider__slides__slide {
+        margin: 0 5% 0 5%; } }
     .slider__slides__slide__title {
       font-size: 45px;
       font-weight: normal; }
+      @media screen and (max-width: 500px) {
+        .slider__slides__slide__title {
+          font-size: 34px; } }
     .slider__slides__slide__sub-title {
       font-size: 18px;
       font-weight: 200;
       margin-bottom: 75px; }
+      @media screen and (max-width: 500px) {
+        .slider__slides__slide__sub-title {
+          font-size: 14px; } }
+      @media screen and (max-width: 400px) {
+        .slider__slides__slide__sub-title {
+          margin-bottom: 15px; } }
     .slider__slides__slide__text {
       font-size: 16px;
       width: 318px;
       margin-bottom: 30px; }
+      @media screen and (max-width: 500px) {
+        .slider__slides__slide__text {
+          width: 100%; } }
     .slider__slides__slide__link {
       text-transform: uppercase;
       font-size: 14px;
@@ -165,7 +182,7 @@ footer {
 .slider__pagination {
   display: block;
   text-align: center;
-  margin-top: -15px; }
+  margin-top: 25px; }
   .slider__pagination__section {
     display: inline-block;
     width: 100px;
@@ -177,6 +194,10 @@ footer {
     will-change: transform;
     opacity: 0.1;
     transition: opacity 0.5s linear; }
+    @media screen and (max-width: 400px) {
+      .slider__pagination__section {
+        width: 50px;
+        margin-right: 15px; } }
     .slider__pagination__section:last-of-type {
       margin-right: 0; }
 
