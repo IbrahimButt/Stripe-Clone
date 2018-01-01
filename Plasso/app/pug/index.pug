@@ -4,157 +4,106 @@ html
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet", href="css/normal.css")
     link(rel="stylesheet", href="css/styles.css")
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Poppins")
     title Plasso
-  body
-    .main-grid
-      //- section.header
-      //-   .wrap
-      //-     h1 Plasso
-      //-     nav.header-nav.header-nav__main
-      //- ul
-      //-   li
-      //-   li
-      //-   li
-      //-   li
+  body  
+    section.hero
+      .hero__wrap
+        h2.hero__title Payments Made Simple
+        p.hero__text Sell and accept payments online. No coding or website building necessary.
 
-      section.hero
-        .wrap.wrap--hero
-          h2.hero__title Payments Made Simple
-          p.hero__text Sell and accept payments online
-          p.hero__text No coding or website building necessary.
-
-          = "\n"
-          a.button.big.outlined(href="#") Watch Film
-          = "\n"
-          a.button.big.filled.drop-shadow(href="#") Start Making Money
-
-      section.slider#slider
-        input(type="radio", name="pagination" id="membershipSlide", checked="true")
-        input(type="radio", name="pagination" id="billingSlide")
-        input(type="radio", name="pagination" id="storefrontSlide")
-        .slider__backgrounds.slider__backgrounds__bottom.slider__backgrounds__bottom--membership
-        .slider__backgrounds.slider__backgrounds__bottom.slider__backgrounds__bottom--billing
-        .slider__backgrounds.slider__backgrounds__bottom.slider__backgrounds__bottom--storefront
-        .slider__backgrounds.slider__backgrounds__top.slider__backgrounds__top--membership
-        .slider__backgrounds.slider__backgrounds__top.slider__backgrounds__top--billing
-        .slider__backgrounds.slider__backgrounds__top.slider__backgrounds__top--storefront
-        .slider__slides#slides
-          .slider__slides__slide
+        = "\n"
+        a.button.big.outlined(href="#") Watch Film
+        = "\n"
+        a.button.big.filled.drop-shadow(href="#") Start Making Money
+    section.slider
+      input(type="radio", name="pagination" id="membershipSlide", checked="true")
+      input(type="radio", name="pagination" id="billingSlide")
+      input(type="radio", name="pagination" id="storefrontSlide")
+      .slider__backgrounds.slider__backgrounds__bottom.slider__backgrounds__bottom--membership
+      .slider__backgrounds.slider__backgrounds__bottom.slider__backgrounds__bottom--billing
+      .slider__backgrounds.slider__backgrounds__bottom.slider__backgrounds__bottom--storefront
+      .slider__backgrounds.slider__backgrounds__top.slider__backgrounds__top--membership
+      .slider__backgrounds.slider__backgrounds__top.slider__backgrounds__top--billing
+      .slider__backgrounds.slider__backgrounds__top.slider__backgrounds__top--storefront
+      .slider__slides
+        .slider__slides__slide
+          .slider__slides__slide__content-wrap
             h3.slider__slides__slide__title.slider__slides__slide__title--membership Membership
             h4.slider__slides__slide__sub-title.slider__slides__slide__sub-title--membership Create your own subscription business
             p.slider__slides__slide__text.slider__slides__slide__text--membership You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.
             a.slider__slides__slide__link.slider__slides__slide__link--membership(href="#") Learn More
-          .slider__slides__slide
+        .slider__slides__slide
+          .slider__slides__slide__content-wrap
             h3.slider__slides__slide__title.slider__slides__slide__title--billing Billing
             h4.slider__slides__slide__sub-title.slider__slides__slide__sub-title--billing Create your own subscription business
             p.slider__slides__slide__text.slider__slides__slide__text--billing You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.
             a.slider__slides__slide__link.slider__slides__slide__link--billing(href="#") Learn More
-          .slider__slides__slide
+        .slider__slides__slide
+          .slider__slides__slide__content-wrap
             h3.slider__slides__slide__title.slider__slides__slide__title--storefront Storefront
-              h4.slider__slides__slide__sub-title.slider__slides__slide__sub-title--storefront Create your own subscription business
-              p.slider__slides__slide__text.slider__slides__slide__text--storefront You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.
-              a.slider__slides__slide__link(href="#") Learn More
-        .slider__pagination#sliderPagination
-            label.slider__pagination__section.slider__pagination__section--membership#membershipSection(for="membershipSlide") Membership
-            label.slider__pagination__section.slider__pagination__section--billing#billingSection(for="billingSlide") Billing
-            label.slider__pagination__section#storefrontSection.slider__pagination__section--storefront(for="storefrontSlide") Storefront
+            h4.slider__slides__slide__sub-title.slider__slides__slide__sub-title--storefront Create your own subscription business
+            p.slider__slides__slide__text.slider__slides__slide__text--storefront You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.
+            a.slider__slides__slide__link(href="#") Learn More
+      .slider__pagination
+        label.slider__pagination__section.slider__pagination__section--membership#membershipSection(for="membershipSlide") Membership
+        label.slider__pagination__section.slider__pagination__section--billing#billingSection(for="billingSlide") Billing
+        label.slider__pagination__section#storefrontSection.slider__pagination__section--storefront(for="storefrontSlide") Storefront
 
-      section.updates
-        .wrap.wrap--updates
-          p.updates__pill
-            span.updates__alert new
-            a.updates__link(href="#") We've just launched our new WordPress plugin and free themes!
+    section.latest
+      p.latest__pill
+        span.latest__pill__alert New
+        a.latest__pill__link(href="#") We've just launched our new WordPress plugin and free themes!
+      
+    section.selling-points
+      .selling-points__block
+        h4.selling-points__block__title Hassle-free recurring billing
+        p.selling-points__block__text Get recurring billing for your business setup in a few minutes. No coding neccessary. Plasso will manage your payments, customers and user authentication all automatically. 
+        a(href="#") Learn More
+      .selling-points__block
+        h4.selling-points__block__title Plasso: a business platform
+        p.selling-points__block__text Sell your services and subscriptions. Sell physical and digital goods. Send invoices. Get paid. Plasso makes it easy to start and grow your own business. 
+        a.selling-points__block__link(href="#") Get Started
 
-      section.selling-points
-        .wrap.wrap--selling-points
-          .selling-points__block
-            h4.selling-points__title Hassle-free recurring billing
-            p.selling-points__text Get recurring billing for your business setup in a few minutes. No coding neccessary. Plasso will manage your payments, customers and user authentication all automatically.
-            a(href="#") Learn More
+    footer.footer-main
+      .wrap.footer-main__wrap
+        .footer-main__block
+          h5.footer-main__block__title Products
+          span.footer-main__block__list-item Storefront
+          span.footer-main__block__list-item Billing
+          span.footer-main__block__list-item Membership
+          span.footer-main__block__list-item Pay Me
+          span.footer-main__block__list-item Invoice
+        .footer-main__block
+          h5.footer-main__block__title Platform
+          span.footer-main__block__list-item Support
+          span.footer-main__block__list-item Customers
+          span.footer-main__block__list-item Pricing
+          span.footer-main__block__list-item WordPress
+          span.footer-main__block__list-item Market
+          span.footer-main__block__list-item Privacy Policy
+          span.footer-main__block__list-item Terms
+        .footer-main__block
+          h5.footer-main__block__title Company
+          span.footer-main__block__list-item About
+          span.footer-main__block__list-item Blog
+          span.footer-main__block__list-item Contact Support
+          span.footer-main__block__list-item Twitter
+          span.footer-main__block__list-item Instagram
+          span.footer-main__block__list-item Facebook
+          span.footer-main__block__list-item Pinterest
+          span.footer-main__block__list-item Youtube
+    footer.footer-secondary
+      .wrap.footer-secondary__wrap
+        p.footer-secondary__copyright
+          | Copyright © 2012-2018 
+          a.footer-secondary__copyright-link(href="#") Plasso, Inc. 
+          | All rights reserved.
 
-          .selling-points__block
-            h4.selling-points__title Plasso: a business platform
-            p.selling-points__text Sell your services and subscriptions. Sell physical and digital goods. Send invoices. Get paid. Plasso makes it easy to start and grow your own business.
-            a(href="#") Get Started
-
-      footer
-        .footer__main
-          .wrap.wrap--footer__main
-
-            .footer__main__block
-              h5.footer__main__title Products
-              .footer__main__list-wrap
-                ul
-                  li
-                    a(href="#") Storefront
-                  li
-                    a(href="#") Membership
-                  li
-                    a(href="#") Invoice
-                ul
-                  li
-                    a(href="#") Billing
-                  li
-                    a(href="#") Pay Me
-
-            .footer__main__block
-              h5.footer__main__title Platform
-              .footer__main__list-wrap
-                ul
-                  li
-                    a(href="#") Support
-                  li
-                    a(href="#") Pricing
-                  li
-                    a(href="#") Market
-                  li
-                    a(href="#") Terms
-                ul
-                  li
-                    a(href="#") Customers
-                  li
-                    a(href="#") WordPress
-                  li
-                    a(href="#") Privacy Policy
-
-            .footer__main__block
-              h5.footer__main__title Company
-              .footer__main__list-wrap
-                ul
-                  li
-                    a(href="#") About
-                  li
-                    a(href="#") Contact Support
-                  li
-                    a(href="#") Instagram
-                  li
-                    a(href="#") Pinterest
-                ul
-                  li
-                    a(href="#") Blog
-                  li
-                    a(href="#") Twitter
-                  li
-                    a(href="#") Facebook
-                  li 
-                    a(href="#") YouTube
-
-        .footer__small
-          .wrap.wrap--footer__small
-
-            p.footer__small__copyright
-              | Copyright © 2012-2017 
-              a.footer__small__copyright-link(href="#") Plasso, Inc. 
-              | All rights reserved.
-              
-            nav.footer__small__nav
-              = "\n"
-              a.button.small(href="#") Log In
-              = "\n"
-              a.button.small.outlined(href="#") Sign Up
-    script(src="script.js")
-
-
+        nav.footer-secondary__nav
+          = "\n"
+          a.button.small(href="#") Log In
+          = "\n"
+          a.button.small.outlined(href="#") Sign Up
 

@@ -1,97 +1,18 @@
-.wrap--full-width
-  width: 100%
-
-.wrap--hero
-  padding-top: 240px
-  padding-bottom: 225px
-  @media screen and (max-width: 700px)
-    padding-top: 200px
-    padding-bottom: 120px
-  @media screen and (max-width: 400px)
-    padding-top: 170px
-  
-.wrap--updates
-  display: grid
-  justify-self: center
-  margin-top: 90px
-
-
-.wrap--selling-points
-  max-width: 880px
-  display: grid
-  grid-template-columns: 1fr 1fr
-  grid-column-gap: 16%
-  padding-top: 90px
-  padding-bottom: 140px
-  @media screen and (max-width: 700px)
-    grid-template-columns: 1fr
-    grid-template-rows: 1fr 1fr
-    padding-top: 100px
-    padding-bottom: 80px
-
-
-.wrap--footer__main
-  max-width: 1100px
-  display: grid
-  grid-template-columns: 1fr 1fr 1fr
-  grid-template-rows: auto
-  grid-column-gap: 7.5%
-  padding-top: 80px
-  padding-bottom: 60px
-  @media screen and (max-width: 700px)
-    grid-template-columns: 1fr
-    grid-template-rows: 1fr 1fr 1fr
-    padding-top: 50px
-    padding-bottom: 50px
-
-.wrap--footer__small
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: auto
-    padding-top: 20px
-    padding-bottom: 20px
-    @media screen and (max-width: 700px)
-      grid-template-columns: 1fr
-      grid-template-rows: 1fr 1fr
-
 .button
-  &:first-of-type
-    margin-right: 24px
-    @media screen and (max-width: 500px)
-      margin-bottom: 30px
   &.big
-    padding: 21px 30px
-    font-size: 17px
+    padding: 23px 30px
+    @media screen and (min-width: 400px)
+      font-size: 17px
   &.small
-    padding: 13.5px 22px
-    font-size: 14px
+    padding: 15px 22px
+    // font-size: 14px
   &.outlined
-    border: 1px solid $button-border-color
+    border: 1px solid rgba(62, 112, 255, 0.5)
   &.filled
     color: white
-    background-image: $filled-button-bg
+    background-color: rgba(62, 112, 255, 1)
+    // background-image: $filled-button-bg
   &.drop-shadow
-    box-shadow: $button-dropshadow
-  
-.slider__slides__slide
-  &__title
-    &--membership
-      color: #f44c67
-    &--billing
-      color: #2fca74
-    &--storefront
-      color: #4f5ef5
-  &__sub-title
-    &--membership
-      color: #f44c67
-    &--billing
-      color: #2fca74
-    &--storefront
-      color: #4f5ef5
-  &__link
-    &--membership
-      color: #f44c67
-    &--billing
-      color: #2fca74
-    &--storefront
-      color: #4f5ef5
+    -moz-box-shadow: rgba(23,43,99,0.26) 0 7px 42px
+    -webkit-box-shadow: rgba(23,43,99,0.26) 0 7px 42px
+    box-shadow: rgba(23,43,99,0.26) 0 7px 42px

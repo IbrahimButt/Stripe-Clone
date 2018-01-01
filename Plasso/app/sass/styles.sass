@@ -1,58 +1,7 @@
-// At 800px
-//  hamburger menu
-//  footer blocks stack
-
-// At 700px
-//  selling points stack
-//  footer small elements stack
-
-@font-face
-  font-family: "CalibreWeb"
-  src: url(../font/CalibreWeb-Light.eot)
-  src: url(../font/CalibreWeb-Light.eot?#iefix) format("embedded-opentype"),url(../font/CalibreWeb-Light.woff2) format("woff2"),url(../font/CalibreWeb-Light.woff) format("woff")
-  font-weight: 200
-  font-style: normal
-
-@font-face
-  font-family: 'CalibreWeb'
-  src: url(../font/CalibreWeb-Regular.eot)
-  src: url(../font/CalibreWeb-Regular.eot?#iefix) format("embedded-opentype"),url(../font/CalibreWeb-Regular.woff2) format("woff2"),url(../font/CalibreWeb-Regular.woff) format("woff")
-  font-weight: normal
-  font-style: normal
-
-@font-face
-  font-family: 'CalibreWeb'
-  src: url(../font/CalibreWeb-Semibold.eot)
-  src: url(../font/CalibreWeb-Semibold.eot?#iefix) format("embedded-opentype"),url(../font/CalibreWeb-Semibold.woff2) format("woff2"),url(../font/CalibreWeb-Semibold.woff) format("woff")
-  font-weight: bold
-  font-style: normal
-
-// Color Variables
-$text-black: #1d1d1f
-$text-normal-color: #768093
-$button-color: #3e70ff
-$link-color: #3e70ff
-$footer-heading-color: #abb1b7
-$button-border-color: rgba(62, 112, 255, 0.5)
-
-// Background  Variables
-$updates-pill: #3e70ff
-$body-bg: transparent url(../images/bg-texture.png) repeat top left
-$filled-button-bg: linear-gradient(rgb(32, 131, 254), rgb(29, 123, 240))
-$footer-main-bg: #f3f4f8 url(../images/bg-texture.png) repeat top left
-$footer-small-bg: #ecedf2 url(../images/bg-texture.png) repeat top left
-
-$slides-background-bottom-membership: #ffd9df
-$slides-background-top-membership: linear-gradient(#f44c67, #fb377f 50%)
-
-$slides-background-bottom-billing: #c8f0da
-$slides-background-top-billing: linear-gradient(#3cd781, #21b88f 50%)
-
-$slides-background-bottom-storefront: #d8e9ff
-$slides-background-top-storefront: linear-gradient(#6472ff, #4a42e6 50%)
-
-// Misc Variables
-$button-dropshadow: rgba(23, 43, 99, 0.26) 0px 7px 42px 0px
+@import fonts
+@import blocks
+@import elements
+@import modifiers
 
 *
   padding: 0
@@ -66,9 +15,4 @@ $button-dropshadow: rgba(23, 43, 99, 0.26) 0px 7px 42px 0px
 
 a
   text-decoration: none
-  color: $link-color
-
-
-@import blocks
-@import elements
-@import modifiers
+  color: #3e70ff
