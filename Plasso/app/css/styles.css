@@ -152,20 +152,8 @@ body {
     will-change: opacity; }
     .slider__backgrounds__bottom {
       clip-path: polygon(0 11.4%, 100% 0%, 100% 88.9%, 0% 100%); }
-      .slider__backgrounds__bottom--membership {
-        background-color: #ffd9df; }
-      .slider__backgrounds__bottom--billing {
-        background-color: #c8f0da; }
-      .slider__backgrounds__bottom--storefront {
-        background-color: #d8e9ff; }
     .slider__backgrounds__top {
       clip-path: polygon(0 19.7%, 100% 0%, 100% 80.3%, 0% 100%); }
-      .slider__backgrounds__top--membership {
-        background: linear-gradient(#f44c67, #fb377f 50%); }
-      .slider__backgrounds__top--billing {
-        background: linear-gradient(#3cd781, #21b88f 50%); }
-      .slider__backgrounds__top--storefront {
-        background: linear-gradient(#6472ff, #4a42e6 50%); }
   .slider__slides {
     display: grid;
     grid-template-columns: 100% 100% 100%;
@@ -379,6 +367,24 @@ body {
   -moz-box-shadow: rgba(23, 43, 99, 0.26) 0 7px 42px;
   -webkit-box-shadow: rgba(23, 43, 99, 0.26) 0 7px 42px;
   box-shadow: rgba(23, 43, 99, 0.26) 0 7px 42px; }
+
+.slider__backgrounds__bottom--membership {
+  background-color: #ffd9df; }
+
+.slider__backgrounds__bottom--billing {
+  background-color: #c8f0da; }
+
+.slider__backgrounds__bottom--storefront {
+  background-color: #d8e9ff; }
+
+.slider__backgrounds__top--membership {
+  background: linear-gradient(#f44c67, #fb377f 50%); }
+
+.slider__backgrounds__top--billing {
+  background: linear-gradient(#3cd781, #21b88f 50%); }
+
+.slider__backgrounds__top--storefront {
+  background: linear-gradient(#6472ff, #4a42e6 50%); }
 
 * {
   padding: 0;
