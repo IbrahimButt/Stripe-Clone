@@ -142,6 +142,7 @@
     color: #1d1d1f
     font-size: 16px
     line-height: 16px
+		
 
     &:first-of-type
       border-bottom: none
@@ -177,6 +178,9 @@
 
         @media screen and (min-width: 600px)
             padding: 15px 22px
+            -moz-box-shadow: rgba(23,43,99,0.26) 0 7px 42px
+            -webkit-box-shadow: rgba(23,43,99,0.26) 0 7px 42px
+            box-shadow: rgba(23,43,99,0.26) 0 7px 42px
 
 .nav-sub
   position: absolute
@@ -243,7 +247,7 @@
         height: 380px
         width: 100%
         opacity: 0
-        transition: opacity 1s linear
+        transition: opacity 0.4s linear
         will-change: opacity
 
         &__bottom
@@ -255,7 +259,7 @@
     &__slides
         display: grid
         grid-template-columns: 100% 100% 100%
-        transition: transform 1s ease-in-out
+        transition: transform 0.4s ease-in-out
         will-change: transform
         height: 380px
 
@@ -409,6 +413,7 @@
         grid-template-columns: auto 1fr
         align-items: center
         grid-auto-flow: column
+        transition: opacity .3s
 
         &__alert
             line-height: 10px
@@ -437,16 +442,6 @@
             &:hover
                 .latest__pill__arrow
                     transform: translateX(5px)
-
-
-        // &__link
-        //     display: grid
-        //     grid-template-columns: auto 1fr
-        //     grid-auto-flow: column
-        //     grid-column-gap: 10px
-        //     font-style: 
-        //     align-items: center
-
 
 .selling-points
     &__block

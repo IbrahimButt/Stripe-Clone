@@ -128,21 +128,36 @@
 //         ~ .nav-main
 //             .nav-middle
 //                 animation: none
+
+// Nav Middle Height = 153 px
+// Nav Right Height = 104 px
+// Nav Sub Height = 60.7 px
             
 .hamburger
     ~ .nav-main
-        .nav-middle,
-        .nav-right,
+        .nav-middle
            opacity: 0
-        
+           transform: translateY(-278px)
+           background-color: white
+           z-index: -1
+        .nav-right
+           opacity: 0
+           transform: translateY(-382px)
+           background-color: white
+
     ~ .nav-sub
         opacity: 0
 
     &.active
         ~ .nav-main
-            .nav-middle,
-            .nav-right,
+            .nav-middle
                 opacity: 1
+                transform: translateY(0)
+            .nav-right
+                opacity: 1
+                transform: translateY(0)
+                // box-shadow: rgba(29,29,31,0.14) 0 10px 60px
+                z-index: -1
 
         ~ .nav-sub
             opacity: 1
@@ -153,6 +168,10 @@
         ~ .nav-main
             .nav-right
                 opacity: 1
+                transform: translateY(0)
+                box-shadow: none
+                padding-bottom: 0
+                
             
 
 @media screen and (min-width: 800px)
@@ -160,5 +179,7 @@
         ~ .nav-main
             .nav-middle
                 opacity: 1
+                transform: translateY(0)
+
             
 
