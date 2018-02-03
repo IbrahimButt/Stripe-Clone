@@ -8,28 +8,28 @@ html
     link(rel="stylesheet", href="css/styles.css")
     title Plasso
   body
-    section.header
-      #hamburger.hamburger
-        .hamburger__line.hamburger__line__one
-        .hamburger__line.hamburger__line__two
-        .hamburger__line.hamburger__line__three
+    //- section.header
+    //-   #hamburger.hamburger
+    //-     .hamburger__line.hamburger__line__one
+    //-     .hamburger__line.hamburger__line__two
+    //-     .hamburger__line.hamburger__line__three
 
-      .nav-main
-        nav.nav-middle
-          a.nav-middle__links(href="#") Pricing
-          a.nav-middle__links(href="#") Customers
-          a.nav-middle__links(href="#") Blog
-        nav.nav-right
-          a.nav-right__links(href="#") Log In
-          a.nav-right__links.nav-right__links--button(href="#") Sign Up
+    //-   .nav-main
+    //-     nav.nav-middle
+    //-       a.nav-middle__links(href="#") Pricing
+    //-       a.nav-middle__links(href="#") Customers
+    //-       a.nav-middle__links(href="#") Blog
+    //-     nav.nav-right
+    //-       a.nav-right__links(href="#") Log In
+    //-       a.nav-right__links.nav-right__links--button(href="#") Sign Up
 
-      .nav-sub
-        .nav-sub__inner
-          a.nav-sub__links(href="#") Storefront
-          a.nav-sub__links(href="#") Membership
-          a.nav-sub__links(href="#") Billing
-          a.nav-sub__links(href="#") Invoice
-          a.nav-sub__links(href="#") Pay Me
+    //-   .nav-sub
+    //-     .nav-sub__inner
+    //-       a.nav-sub__links(href="#") Storefront
+    //-       a.nav-sub__links(href="#") Membership
+    //-       a.nav-sub__links(href="#") Billing
+    //-       a.nav-sub__links(href="#") Invoice
+    //-       a.nav-sub__links(href="#") Pay Me
 
     section.hero
       .hero__wrap
@@ -39,7 +39,7 @@ html
         = "\n"
         a.button.big.outlined(href="#") Watch Film
         = "\n"
-        a.button.big.filled.drop-shadow(href="#") Start Making Money
+        a.button.big.filled.drop-shadow.right-arrow--white(href="#") Start Making Money
     section.slider
       input(type="radio", name="pagination" id="membershipSlide", checked="true")
       input(type="radio", name="pagination" id="billingSlide")
@@ -75,19 +75,23 @@ html
         label.slider__pagination__section#storefrontSection.slider__pagination__section--storefront(for="storefrontSlide") Storefront
 
     section.latest
-      p.latest__pill
-        span.latest__pill__alert New
-        a.latest__pill__link(href="#") We've just launched our new WordPress plugin and free themes!
+      a.latest__pill(href="#")
+        .latest__pill__alert New
+        p.latest__pill__text We've just launched our new WordPress plugin and free themes!
+        .latest__pill__arrow
+        
+
+
       
     section.selling-points
       .selling-points__block
         h4.selling-points__block__title Hassle-free recurring billing
         p.selling-points__block__text Get recurring billing for your business setup in a few minutes. No coding neccessary. Plasso will manage your payments, customers and user authentication all automatically. 
-        a(href="#") Learn More
+        a.selling-points__block__link.right-arrow--blue(href="#") Learn More
       .selling-points__block
         h4.selling-points__block__title Plasso: a business platform
         p.selling-points__block__text Sell your services and subscriptions. Sell physical and digital goods. Send invoices. Get paid. Plasso makes it easy to start and grow your own business. 
-        a.selling-points__block__link(href="#") Get Started
+        a.selling-points__block__link.right-arrow--blue(href="#") Get Started
 
     footer.footer-main
       .wrap.footer-main__wrap
