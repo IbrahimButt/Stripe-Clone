@@ -1,185 +1,78 @@
-.no-animation
-	-webkit-animation: none !important
-          animation: none !important
+// .no-animation
+// 	-webkit-animation: none !important
+//           animation: none !important
 
 
-// Hamburger Menu Animations
-// Hamburger Menu Animations
-// Hamburger Menu Animations
+// // Hamburger Menu Animations
+// // Hamburger Menu Animations
+// // Hamburger Menu Animations
 
-@keyframes line-one-in
-    0%
-        transform: translateY(0)
+// @keyframes line-one-in
+//     0%
+//         transform: translateY(0)
 
-    50%
-        transform: translateY(7px) rotate(0)
+//     50%
+//         transform: translateY(7px) rotate(0)
 
-    100%
-        transform: translateY(7px) rotate(45deg)
+//     100%
+//         transform: translateY(7px) rotate(45deg)
 
-@keyframes line-two-in
-    to
-        opacity: 0
-    from
-        opacity: 1
+// @keyframes line-two-in
+//     to
+//         opacity: 0
+//     from
+//         opacity: 1
 
-@keyframes line-three-in
-    0%
-        transform: translateY(0)
+// @keyframes line-three-in
+//     0%
+//         transform: translateY(0)
 
-    50%
-        transform: translateY(-7px) rotate(0)
+//     50%
+//         transform: translateY(-7px) rotate(0)
 
-    100%
-        transform: translateY(-7px) rotate(-45deg)
+//     100%
+//         transform: translateY(-7px) rotate(-45deg)
 
-@keyframes line-one-out
-    0%
-        transform: translateY(7px) rotate(45deg)
+// @keyframes line-one-out
+//     0%
+//         transform: translateY(7px) rotate(45deg)
 
-    50%
-        transform: translateY(7px) rotate(0)
+//     50%
+//         transform: translateY(7px) rotate(0)
 
-    100%
-        transform: translateY(0)
+//     100%
+//         transform: translateY(0)
 
-@keyframes line-two-out
-    to
-        opacity: 1
-    from
-        opacity: 0
+// @keyframes line-two-out
+//     to
+//         opacity: 1
+//     from
+//         opacity: 0
 
-@keyframes line-three-out
-    0%
-        transform: translateY(-7px) rotate(-45deg)
+// @keyframes line-three-out
+//     0%
+//         transform: translateY(-7px) rotate(-45deg)
 
-    50%
-        transform: translateY(-7px) rotate(0)
+//     50%
+//         transform: translateY(-7px) rotate(0)
 
-    100%
-        transform: translateY(0)
-
-.hamburger
-    .hamburger__line__one
-        animation: line-one-out .5s ease forwards
-    .hamburger__line__two
-        animation: line-two-out .5s ease forwards
-    .hamburger__line__three
-        animation: line-three-out .5s ease forwards
-
-    &.active
-        .hamburger__line__one
-            animation: line-one-in .5s ease forwards
-        .hamburger__line__two
-            animation: line-two-in .5s ease forwards
-        .hamburger__line__three
-            animation: line-three-in .5s ease forwards
-
-// Nav Middle
-// Nav Animations
-// Nav Animations
-
-@keyframes navs-in
-    0%
-        opacity: 0
-        visibility: hidden
-
-    100%
-        opacity: 1
-        visibility: visible
-
-@keyframes navs-out
-    0%
-        opacity: 1
-        visibility: visible
-        
-    100%
-        opacity: 0
-        visibility: hidden
+//     100%
+//         transform: translateY(0)
 
 // .hamburger
-//     ~ .nav-main
-//         .nav-middle,
-//         .nav-right,
-//             animation: navs-out .5s ease forwards
-        
-//     ~ .nav-sub
-//         animation: navs-out .5s ease forwards
+//     .hamburger__line__one
+//         animation: line-one-out .5s ease forwards
+//     .hamburger__line__two
+//         animation: line-two-out .5s ease forwards
+//     .hamburger__line__three
+//         animation: line-three-out .5s ease forwards
 
 //     &.active
-//         ~ .nav-main
-//             .nav-middle,
-//             .nav-right,
-//                 animation: navs-in .5s ease forwards
+//         .hamburger__line__one
+//             animation: line-one-in .5s ease forwards
+//         .hamburger__line__two
+//             animation: line-two-in .5s ease forwards
+//         .hamburger__line__three
+//             animation: line-three-in .5s ease forwards
 
-//         ~ .nav-sub
-//             animation: navs-in .5s ease forwards
-
-
-// @media screen and (min-width: 600px)
-//     .hamburger
-//         ~ .nav-main
-//             .nav-right
-//                 animation: none
-            
-
-// @media screen and (min-width: 800px)
-//     .hamburger
-//         ~ .nav-main
-//             .nav-middle
-//                 animation: none
-
-// Nav Middle Height = 153 px
-// Nav Right Height = 104 px
-// Nav Sub Height = 60.7 px
-            
-.hamburger
-    ~ .nav-main
-        .nav-middle
-           opacity: 0
-           transform: translateY(-278px)
-           background-color: white
-           z-index: -1
-        .nav-right
-           opacity: 0
-           transform: translateY(-382px)
-           background-color: white
-
-    ~ .nav-sub
-        opacity: 0
-
-    &.active
-        ~ .nav-main
-            .nav-middle
-                opacity: 1
-                transform: translateY(0)
-            .nav-right
-                opacity: 1
-                transform: translateY(0)
-                // box-shadow: rgba(29,29,31,0.14) 0 10px 60px
-                z-index: -1
-
-        ~ .nav-sub
-            opacity: 1
-
-
-@media screen and (min-width: 600px)
-    .hamburger
-        ~ .nav-main
-            .nav-right
-                opacity: 1
-                transform: translateY(0)
-                box-shadow: none
-                padding-bottom: 0
-                
-            
-
-@media screen and (min-width: 800px)
-    .hamburger
-        ~ .nav-main
-            .nav-middle
-                opacity: 1
-                transform: translateY(0)
-
-            
 

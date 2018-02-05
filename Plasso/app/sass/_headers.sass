@@ -1,0 +1,76 @@
+.gapper
+  height: 800px
+  width: 100%
+
+.header
+  position: fixed
+  width: 100%
+  padding: 24px
+  z-index: 5
+  background-color: white
+  -moz-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
+  -webkit-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
+  box-shadow: rgba(29,29,31,0.14) 0 10px 60px
+
+.hamburger
+  display: block
+.hamburger__line
+  width: 22px
+  height: 2px
+  margin-bottom: 5px
+  background-color: #1d1d1f
+
+  &:last-of-type
+    margin-bottom: 0
+
+.header__logo
+  position: relative
+  margin: 0 auto
+  text-align: center
+  font-size: 18px
+  line-height: 18px
+  top: -17px
+
+  a
+    line-height: 18px
+
+  span
+    display: none
+
+  img
+    height: 16px
+    object-fit: cover
+
+.main-menu
+  a
+    line-height: 16px
+    font-size: 16px
+    display: block
+    // margin: 0 5%
+    padding: 17px 20px
+    color: #1d1d1f
+    border-bottom: 1px solid #e8ebef
+    &::after
+      content: " "
+      float: right
+      width: 5px
+      height: 9px
+      position: relative
+      display: inline-block
+      margin-top: 5px
+      align-self: center
+      transform: translateX(3px)
+      background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%231d1d1f" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
+
+  &__middle
+
+  &__right
+    a
+      &:first-of-type
+        border: none
+      &:last-of-type
+        font-size: 14px
+
+        &::after
+          background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%23fff" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
+

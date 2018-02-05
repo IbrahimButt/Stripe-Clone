@@ -9,28 +9,34 @@ html
     title Plasso
   body
     section.header
-      #hamburger.hamburger
+      a.hamburger(href="")
         .hamburger__line.hamburger__line__one
         .hamburger__line.hamburger__line__two
         .hamburger__line.hamburger__line__three
+      h1.header__logo
+        span Plasso
+        a(href="")
+          img(src="images/logo.png", alt="")
+      .main-menu
+        nav.main-menu__middle
+          a(href="") Products
+          a(href="") Pricing
+          a(href="") Customers
+          a(href="") Blog
+        nav.main-menu__right
+          a(href="") Log In
+          a.button.filled(href="") Sign Up
 
-      .nav-main
-        nav.nav-middle
-          a.nav-middle__links(href="#") Pricing
-          a.nav-middle__links(href="#") Customers
-          a.nav-middle__links(href="#") Blog
-        nav.nav-right
-          a.nav-right__links(href="#") Log In
-          a.nav-right__links.nav-right__links--button(href="#") Sign Up
+      //- .sub-nav
+      //-   .sub-nav__holder
+      //-     nav.sub-nav__inner
+      //-       a(href="") Storefront
+      //-       a(href="") Membership
+      //-       a(href="") Billing
+      //-       a(href="") Invoice
+      //-       a(href="") Pay Me
 
-      .nav-sub
-        .nav-sub__inner
-          a.nav-sub__links(href="#") Storefront
-          a.nav-sub__links(href="#") Membership
-          a.nav-sub__links(href="#") Billing
-          a.nav-sub__links(href="#") Invoice
-          a.nav-sub__links(href="#") Pay Me
-
+    .gapper
     section.hero
       .hero__wrap
         h2.hero__title Payments Made Simple
