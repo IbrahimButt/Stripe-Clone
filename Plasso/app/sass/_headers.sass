@@ -1,23 +1,33 @@
-.gapper
-  height: 800px
-  width: 100%
+// .gapper
+//   height: 1000px
+//   width: 100%
+
+.shadowOnScroll
+  -moz-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
+  -webkit-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
+  box-shadow: rgba(29,29,31,0.14) 0 10px 60px
+  
 
 .header
   position: fixed
   width: 100%
-  padding: 24px
+  padding: 24px 0
   z-index: 5
   background-color: white
-  -moz-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
-  -webkit-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
-  box-shadow: rgba(29,29,31,0.14) 0 10px 60px
+  transition: all .6s
+  // -moz-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
+  // -webkit-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
+  // box-shadow: rgba(29,29,31,0.14) 0 10px 60px
 
 .hamburger
   display: block
+  z-index: 8
+  position: absolute
 .hamburger__line
   width: 22px
   height: 2px
   margin-bottom: 5px
+  margin-left: 24px
   background-color: #1d1d1f
 
   &:last-of-type
@@ -29,7 +39,7 @@
   text-align: center
   font-size: 18px
   line-height: 18px
-  top: -17px
+  // top: -17px
 
   a
     line-height: 18px
@@ -41,12 +51,22 @@
     height: 16px
     object-fit: cover
 
+
 .main-menu
+  max-height: 0
+  visibility: hidden
+  overflow: hidden
+  opacity: 0
+  transition: all .6s 
+  z-index: 7
+  // outline: 1px solid red
+  margin-top: 24px
+
   a
     line-height: 16px
     font-size: 16px
     display: block
-    // margin: 0 5%
+    margin: 0 5%
     padding: 17px 20px
     color: #1d1d1f
     border-bottom: 1px solid #e8ebef
@@ -63,8 +83,11 @@
       background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%231d1d1f" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
 
   &__middle
+    // margin-top: 0px
+    transition: all .6s 
 
   &__right
+    // white-space: nowrap
     a
       &:first-of-type
         border: none
@@ -73,4 +96,55 @@
 
         &::after
           background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%23fff" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
+      @media screen and (min-width: 600px)
+        display: inline-block
+        // width: 100%
+        padding: 15px 22px
+
+    @media screen and (min-width: 600px)
+      display: block
+      position: absolute
+      top: 12px
+      right: 12px
+
+      
+
+.sub-nav
+  max-height: 0
+  overflow: hidden
+  visibility: hidden
+  transition: all .6s 
+  z-index: 6
+  opacity: 0
+
+  &__inner
+    display: flex
+    align-items: center
+    position: absolute
+    top: 66px
+    width: 100%
+    padding: 36.375px 0
+    overflow-x: auto
+    white-space: nowrap
+    text-align: center
+    font-size: 15px
+    background-color: #f5f6f8
+  
+  a
+    margin: 0 23px
+
+    &:nth-child(1)
+      color: #4f5ef5
+
+    &:nth-child(2)
+      color: #f44c67
+
+    &:nth-child(3)
+      color: #2fca74
+
+    &:nth-child(4)
+      color: #577b94
+
+    &:nth-child(5)
+      color: #06c7d9
 

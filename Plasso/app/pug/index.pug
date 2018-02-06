@@ -8,8 +8,8 @@ html
     link(rel="stylesheet", href="css/styles.css")
     title Plasso
   body
-    section.header
-      a.hamburger(href="")
+    section#header.header
+      a#hamburger.hamburger(href="#")
         .hamburger__line.hamburger__line__one
         .hamburger__line.hamburger__line__two
         .hamburger__line.hamburger__line__three
@@ -27,14 +27,14 @@ html
           a(href="") Log In
           a.button.filled(href="") Sign Up
 
-      //- .sub-nav
-      //-   .sub-nav__holder
-      //-     nav.sub-nav__inner
-      //-       a(href="") Storefront
-      //-       a(href="") Membership
-      //-       a(href="") Billing
-      //-       a(href="") Invoice
-      //-       a(href="") Pay Me
+      .sub-nav
+        //- .sub-nav__outer
+        nav.sub-nav__inner
+          a(href="") Storefront
+          a(href="") Membership
+          a(href="") Billing
+          a(href="") Invoice
+          a(href="") Pay Me
 
     .gapper
     section.hero
