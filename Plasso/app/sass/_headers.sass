@@ -13,7 +13,7 @@
   width: 100%
   padding: 24px 0
   z-index: 5
-  background-color: white
+  background-color: rgba(255,255,255,0.97)
   transition: all .6s
   // -moz-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
   // -webkit-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
@@ -23,6 +23,8 @@
   display: block
   z-index: 8
   position: absolute
+  @media screen and (min-width: 800px)
+    display: none
 .hamburger__line
   width: 22px
   height: 2px
@@ -39,7 +41,10 @@
   text-align: center
   font-size: 18px
   line-height: 18px
-  // top: -17px
+  @media screen and (min-width: 800px)
+    position: absolute
+    top: 30px
+    left: 30px
 
   a
     line-height: 18px
@@ -56,11 +61,11 @@
   max-height: 0
   visibility: hidden
   overflow: hidden
-  opacity: 0
   transition: all .6s 
   z-index: 7
-  // outline: 1px solid red
-  margin-top: 24px
+  @media screen and (min-width: 800px)
+    margin-top: 0
+    max-height: initial
 
   a
     line-height: 16px
@@ -83,52 +88,104 @@
       background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%231d1d1f" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
 
   &__middle
-    // margin-top: 0px
     transition: all .6s 
+    opacity: 0
+    @media screen and (min-width: 800px)
+      opacity: 1
+      visibility: visible
+      text-align: center
+      margin-top: 4px
+
+    a
+      @media screen and (min-width: 800px)
+        display: inline
+        margin: 0 20px
+        padding: 0
+        border: none
+        font-size: 18px
+      &::after
+        @media screen and (min-width: 800px)
+          background: none
+
+      &:last-of-type
+        @media screen and (min-width: 600px)
+          border: none
+          padding-bottom: 1px
 
   &__right
-    // white-space: nowrap
+    transition: all .6s 
+    opacity: 0
+    
+    z-index: 9
+    @media screen and (min-width: 600px)
+      opacity: 1
+      visibility: visible
+    
     a
       &:first-of-type
         border: none
+        @media screen and (min-width: 600px)
+          color: #3e70ff
+          text-transform: uppercase
+          font-weight: bold
+          letter-spacing: 1.4px
+          font-size: 14px
       &:last-of-type
         font-size: 14px
+        line-height: 14px
+        @media screen and (min-width: 600px)
+          -moz-box-shadow: rgba(23,43,99,0.24) 0 7px 28px
+          -webkit-box-shadow: rgba(23,43,99,0.24) 0 7px 28px
+          box-shadow: rgba(23,43,99,0.24) 0 7px 28px
 
         &::after
           background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%23fff" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
+          @media screen and (min-width: 600px)
+            background: none
+      &::after
+        @media screen and (min-width: 600px)
+          background: none
+
       @media screen and (min-width: 600px)
         display: inline-block
-        // width: 100%
+        margin: 0 auto
         padding: 15px 22px
 
     @media screen and (min-width: 600px)
       display: block
       position: absolute
-      top: 12px
+      top: 11px
       right: 12px
+
+    @media screen and (min-width: 800px)
+      top: 15px
+      right: 15px
 
       
 
 .sub-nav
+  transition: all .6s 
+  opacity: 0
   max-height: 0
   overflow: hidden
   visibility: hidden
-  transition: all .6s 
   z-index: 6
-  opacity: 0
 
+  &__outer
+  
   &__inner
     display: flex
-    align-items: center
+    justify-content: center
     position: absolute
     top: 66px
     width: 100%
     padding: 36.375px 0
     overflow-x: auto
     white-space: nowrap
-    text-align: center
     font-size: 15px
     background-color: #f5f6f8
+    @media screen and (min-width: 800px)
+      background-color: rgba(255,255,255,0.97)
   
   a
     margin: 0 23px

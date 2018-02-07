@@ -17,9 +17,9 @@ html
         span Plasso
         a(href="")
           img(src="images/logo.png", alt="")
-      .main-menu
+      .main-menu#mainMenu
         nav.main-menu__middle
-          a(href="") Products
+          a#productsButton(href="#") Products
           a(href="") Pricing
           a(href="") Customers
           a(href="") Blog
@@ -28,13 +28,13 @@ html
           a.button.filled(href="") Sign Up
 
       .sub-nav
-        //- .sub-nav__outer
-        nav.sub-nav__inner
-          a(href="") Storefront
-          a(href="") Membership
-          a(href="") Billing
-          a(href="") Invoice
-          a(href="") Pay Me
+        .sub-nav__outer
+          nav.sub-nav__inner
+            a(href="") Storefront
+            a(href="") Membership
+            a(href="") Billing
+            a(href="") Invoice
+            a(href="") Pay Me
 
     .gapper
     section.hero

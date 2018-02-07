@@ -76,13 +76,25 @@
             animation: line-three-in .5s ease forwards
         
         ~ .main-menu,
-        ~ .sub-nav
+        ~ .sub-nav,
             max-height: initial
             visibility: visible
             opacity: 1
         ~ .main-menu
             .main-menu__middle
-              margin-top: 95px
-       
+              opacity: 1
+        ~ .main-menu
+            margin-top: 115px
+         
+        ~ .main-menu
+            .main-menu__right
+              opacity: 1
+
+.main-menu
+    &.active
+        ~ .sub-nav
+            opacity: 1
+            max-height: initial
+            visibility: visible
 
 
