@@ -1,13 +1,9 @@
-// .gapper
-//   height: 1000px
-//   width: 100%
-
 .shadowOnScroll
   -moz-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
   -webkit-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
   box-shadow: rgba(29,29,31,0.14) 0 10px 60px
-  
 
+  
 .header
   position: fixed
   width: 100%
@@ -15,9 +11,6 @@
   z-index: 5
   background-color: rgba(255,255,255,0.97)
   transition: all .6s
-  // -moz-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
-  // -webkit-box-shadow: rgba(29,29,31,0.14) 0 10px 60px
-  // box-shadow: rgba(29,29,31,0.14) 0 10px 60px
 
 .hamburger
   display: block
@@ -67,7 +60,7 @@
     margin-top: 0
     max-height: initial
 
-  a
+  &__link
     line-height: 16px
     font-size: 16px
     display: block
@@ -95,8 +88,7 @@
       visibility: visible
       text-align: center
       margin-top: 4px
-
-    a
+    .main-menu__link
       @media screen and (min-width: 800px)
         display: inline
         margin: 0 20px
@@ -105,8 +97,21 @@
         font-size: 18px
       &::after
         @media screen and (min-width: 800px)
-          background: none
-
+          content: none
+      @media screen and (min-width: 800px)
+        &:first-of-type::after
+          content: " "
+          width: 9px
+          height: 5px
+          float: none
+          position: relative
+          display: inline-block
+          top: -1px
+          align-self: center
+          left: 3px
+          background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17.991 10.04" enable-background="new 0 0 17.991 10.04" xml:space="preserve"><path fill="%231d1d1f" fill-rule="evenodd" clip-rule="evenodd" d="M9.9509,9.6565c-0.5277,0.5113-1.3841,0.5113-1.912,0L0.395,2.2394 c-0.5267-0.5137-0.5267-1.3437,0-1.8547c0.528-0.5129,1.3846-0.5129,1.9124,0l6.6882,6.4901l6.6881-6.4901 c0.528-0.5129,1.3846-0.5129,1.9125,0c0.5264,0.511,0.5264,1.341,0,1.8547L9.9509,9.6565z"/></svg>')
+          transition: all .6s
+          transform-origin: center center
       &:last-of-type
         @media screen and (min-width: 600px)
           border: none
@@ -121,7 +126,7 @@
       opacity: 1
       visibility: visible
     
-    a
+    .main-menu__link
       &:first-of-type
         border: none
         @media screen and (min-width: 600px)
@@ -160,8 +165,6 @@
     @media screen and (min-width: 800px)
       top: 15px
       right: 15px
-
-      
 
 .sub-nav
   transition: all .6s 

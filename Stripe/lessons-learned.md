@@ -1,1 +1,0 @@
-In an absolute positioned element, if you absolute an element within it, and set apply `bottom: 0;` to it, it will be positioned to the bottom of the parent element, not the window.

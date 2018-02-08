@@ -6,16 +6,19 @@ const mainMenu = document.getElementById('mainMenu');
 
 hamburger.addEventListener('click', function() {
 
-  if (this.classList.contains('active'))
+  if (this.classList.contains('active')) {
     this.classList.remove('active');
-  else
+  }
+  else {
     this.classList.add('active');
+    header.classList.add('shadowOnScroll');
+  }
 
 })
 
 window.addEventListener('scroll', function() {
 
-  if (scrollY < 30)
+  if (scrollY < 30 && !hamburger.classList.contains('active'))
     header.classList.remove('shadowOnScroll');
   else
     header.classList.add('shadowOnScroll');
@@ -28,5 +31,12 @@ productsButton.addEventListener('click', function() {
     mainMenu.classList.remove('active');
   else
     mainMenu.classList.add('active');
-    
+
 })
+
+window.addEventListener('resize', function () {
+
+  if (screen.width < 800 && mainMenu.classList.contains('active'))
+    mainMenu.classList.remove('active');
+
+}); 

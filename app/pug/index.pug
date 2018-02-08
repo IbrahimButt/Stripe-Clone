@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -9,7 +9,7 @@ html
     title Plasso
   body
     section#header.header
-      a#hamburger.hamburger(href="#")
+      a#hamburger.hamburger(href="#/")
         .hamburger__line.hamburger__line__one
         .hamburger__line.hamburger__line__two
         .hamburger__line.hamburger__line__three
@@ -19,13 +19,13 @@ html
           img(src="images/logo.png", alt="")
       .main-menu#mainMenu
         nav.main-menu__middle
-          a#productsButton(href="#") Products
-          a(href="") Pricing
-          a(href="") Customers
-          a(href="") Blog
+          a#productsButton.main-menu__link(href="#") Products
+          a.main-menu__link(href="") Pricing
+          a.main-menu__link(href="") Customers
+          a.main-menu__link(href="") Blog
         nav.main-menu__right
-          a(href="") Log In
-          a.button.filled(href="") Sign Up
+          a.main-menu__link(href="") Log In
+          a.main-menu__link.button.filled(href="") Sign Up
 
       .sub-nav
         .sub-nav__outer
@@ -47,7 +47,7 @@ html
         = "\n"
         a.button.big.filled.drop-shadow.right-arrow--white(href="#") Start Making Money
     section.slider
-      input(type="radio", name="pagination" id="membershipSlide", checked="true")
+      input(type="radio", name="pagination" id="membershipSlide", checked="checked")
       input(type="radio", name="pagination" id="billingSlide")
       input(type="radio", name="pagination" id="storefrontSlide")
       .slider__backgrounds.slider__backgrounds__bottom.slider__backgrounds__bottom--membership
