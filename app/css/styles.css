@@ -634,18 +634,19 @@ body {
   max-height: 0;
   overflow: hidden;
   visibility: hidden;
-  z-index: 6; }
+  z-index: 6;
+  position: absolute;
+  top: 66px;
+  width: 100%; }
   .sub-nav__inner {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 66px;
-    width: 100%;
-    padding: 36.375px 0;
     overflow-x: auto;
     white-space: nowrap;
+    padding: 36.375px 0;
     font-size: 15px;
     background-color: #f5f6f8; }
+    @media screen and (min-width: 600px) {
+      .sub-nav__inner {
+        text-align: center; } }
     @media screen and (min-width: 800px) {
       .sub-nav__inner {
         background-color: rgba(255, 255, 255, 0.97); } }
