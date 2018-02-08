@@ -10,7 +10,8 @@
 
 a {
   text-decoration: none;
-  color: #3e70ff; }
+  color: #3e70ff;
+  -webkit-tap-highlight-color: transparent; }
 
 @font-face {
   font-family: "CalibreWeb";
