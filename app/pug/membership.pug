@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet", href="css/normal.css")
+    link(rel="stylesheet", href="css/styles.css")
+    title Plasso
+  body.product-page.membership
+    include header.pug
+    section.hero
+      h2.hero__title Membership
+      p.hero__tagline Create a membership or subscription business.
+      p.hero__sub-text You’ll have customers signing up for your new business in just a few minutes. Plasso handles all the technical details like recurring billing, member management and more.
+      a.button.big.outlined(href="#") Try A Demo
+    section.boxes
+    
+      .boxes__container
+        .box
+          .box__inner.box-one
+            span.box__title-alt Recurring Billing
+            h3.box__title-main Hassle-free recurring revenue.
+            p.box__text Easily add any number of payment plans at any billing interval for your members to pick from when they sign up. You can create free or paid plans, set free trials, custom billing dates, and more. All the payments, email receipts, and sign up forms are handled by Plasso. You don't have to code anything. 
+        .box
+          .box__inner.box-two
+            span.box__title-alt Member Management
+            h3.box__title-main Know your members.
+            p.box__text With the Plasso dashboard you'll be able to see details of all your members. You'll be able to manage their accounts yourself, view their payment history, issue refunds, pause billing and more.
+      .boxes__container
+        
+        .box
+          .box__inner.box-three
+            span.box__title-alt Member Dashboard
+            h3.box__title-main Members can manage their own accounts.
+            p.box__text  After signing up, your customers will have access to a dashboard where they can update their payment information, email address, password and any other information you collected from them at sign up. They'll also be able to change their payment plan, cancel their account and see their billing history. 
+
+        .box
+          .box__inner.box-four
+            span.box__title-alt Member Communication
+            h3.box__title-main Post private content just for your members.
+            p.box__text Give your members exclusive content or keep them up to date with what you're doing using Plasso's private content feature. Send files and post private messages to your members with a single tap/click. All of your members will be able to log in and access your exclusive content from their dashboard. You can even limit the content you deliver to only specfic members based on which one of your plans they are signed up on. 
+    .gapper
+    section.points
+      
+      
+    script(src="script.js")

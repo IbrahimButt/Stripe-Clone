@@ -8,34 +8,9 @@ html(lang="en")
     link(rel="stylesheet", href="css/styles.css")
     title Plasso
   body
-    section#header.header
-      a#hamburger.hamburger(href="#/")
-        .hamburger__line.hamburger__line__one
-        .hamburger__line.hamburger__line__two
-        .hamburger__line.hamburger__line__three
-      h1.header__logo
-        span Plasso
-        a(href="")
-          img(src="images/logo.png", alt="")
-      .main-menu#mainMenu
-        nav.main-menu__middle
-          a#productsButton.main-menu__link(href="#") Products
-          a.main-menu__link(href="") Pricing
-          a.main-menu__link(href="") Customers
-          a.main-menu__link(href="") Blog
-        nav.main-menu__right
-          a.main-menu__link(href="") Log In
-          a.main-menu__link.button.filled(href="") Sign Up
 
-      .sub-nav
-        nav.sub-nav__inner
-          a(href="") Storefront
-          a(href="") Membership
-          a(href="") Billing
-          a(href="") Invoice
-          a(href="") Pay Me
+    include header.pug
 
-    .gapper
     section.hero
       .hero__wrap
         h2.hero__title Payments Made Simple

@@ -1,3 +1,7 @@
+.gapper
+  width: 100%
+  height: 400px
+
 .wrap
     margin: 0 auto
     max-width: 1100px
@@ -16,43 +20,44 @@
 
     &:hover::after
         transform: translateX(11px)
-        
 
-.right-arrow--white::after
-    transition: transform .3s
-    content: " "
-    width: 5px
-    height: 9px
-    position: relative
-    display: inline-block
-    margin-top: -2px
-    align-self: center
-    transform: translateX(6px)
+.header__logo
+  position: relative
+  margin: 0 auto
+  text-align: center
+  font-size: 18px
+  line-height: 18px
+  @media screen and (min-width: 800px)
+    position: absolute
+    top: 30px
+    left: 30px
 
-.right-arrow
-    &--blue::after
-        transition: transform .3s
-        content: " "
-        width: 5px
-        height: 9px
-        position: relative
-        display: inline-block
-        margin-top: -2px
-        align-self: center
-        transform: translateX(3px)
-        background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%233e70ff" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
+  a
+    line-height: 18px
 
-    &--white::after
-        transition: transform .3s
-        content: " "
-        width: 5px
-        height: 9px
-        position: relative
-        display: inline-block
-        margin-top: -2px
-        align-self: center
-        transform: translateX(7px)
-        background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%23fff" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
+  span
+    display: none
+
+  img
+    height: 16px
+    object-fit: cover
+
+.hamburger
+  z-index: 8
+  display: block
+  position: absolute
+  @media screen and (min-width: 800px)
+    display: none
+
+.hamburger__line
+  width: 22px
+  height: 2px
+  margin-bottom: 5px
+  margin-left: 24px
+  background-color: #1d1d1f
+
+  &:last-of-type
+    margin-bottom: 0
 
 .hero
   &__title
@@ -62,8 +67,8 @@
     color: #1d1d1f
 
     @media screen and (min-width: 400px)
-        font-size: 54px
-        line-height: 64.8px
+      font-size: 54px
+      line-height: 64.8px
 
   &__text
     line-height: 24px
@@ -84,11 +89,188 @@
     @media screen and (min-width: 450px)
       margin-right: 25px
 
+.product-page
+  .hero
+    margin-bottom: 200px
+    &__tagline
+      margin-top: 40px
+      margin-bottom: 10px
+      font-size: 20px
+      font-weight: 200
+      color: #1d1d1f
+    &__sub-text
+      font-size: 17px
+      line-height: 22.1px
+      margin-bottom: 54px
+
+.membership
+  .hero
+    &__title,
+    .button
+      color: $membership-color
+      border-color: $membership-color
+  
+.main-menu
+  max-height: 0
+  visibility: hidden
+  overflow: hidden
+  transition: all .6s 
+  z-index: 7
+  @media screen and (min-width: 800px)
+    margin-top: 0
+    max-height: initial
+
+  &__link
+    line-height: 16px
+    font-size: 16px
+    display: block
+    margin: 0 5%
+    padding: 17px 20px
+    color: #1d1d1f
+    border-bottom: 1px solid #e8ebef
+    &::after
+      content: " "
+      float: right
+      width: 5px
+      height: 9px
+      position: relative
+      display: inline-block
+      margin-top: 5px
+      align-self: center
+      transform: translateX(3px)
+      background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%231d1d1f" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
+
+  &__middle
+    transition: all .6s 
+    opacity: 0
+    @media screen and (min-width: 800px)
+      opacity: 1
+      visibility: visible
+      text-align: center
+      margin-top: 4px
+    .main-menu__link
+      @media screen and (min-width: 800px)
+        display: inline
+        margin: 0 20px
+        padding: 0
+        border: none
+        font-size: 18px
+      &::after
+        @media screen and (min-width: 800px)
+          content: none
+      @media screen and (min-width: 800px)
+        &:first-of-type::after
+          content: " "
+          width: 9px
+          height: 5px
+          float: none
+          position: relative
+          display: inline-block
+          top: -1px
+          align-self: center
+          left: 3px
+          background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17.991 10.04" enable-background="new 0 0 17.991 10.04" xml:space="preserve"><path fill="%231d1d1f" fill-rule="evenodd" clip-rule="evenodd" d="M9.9509,9.6565c-0.5277,0.5113-1.3841,0.5113-1.912,0L0.395,2.2394 c-0.5267-0.5137-0.5267-1.3437,0-1.8547c0.528-0.5129,1.3846-0.5129,1.9124,0l6.6882,6.4901l6.6881-6.4901 c0.528-0.5129,1.3846-0.5129,1.9125,0c0.5264,0.511,0.5264,1.341,0,1.8547L9.9509,9.6565z"/></svg>')
+          transition: all .6s
+          transform-origin: center center
+      &:last-of-type
+        @media screen and (min-width: 600px)
+          border: none
+          padding-bottom: 1px
+
+  &__right
+    transition: all .6s 
+    opacity: 0
+    
+    z-index: 9
+    @media screen and (min-width: 600px)
+      opacity: 1
+      visibility: visible
+    
+    .main-menu__link
+      &:first-of-type
+        border: none
+        @media screen and (min-width: 600px)
+          color: #3e70ff
+          text-transform: uppercase
+          font-weight: bold
+          letter-spacing: 1.4px
+          font-size: 14px
+      &:last-of-type
+        font-size: 14px
+        line-height: 14px
+        @media screen and (min-width: 600px)
+          -moz-box-shadow: rgba(23,43,99,0.24) 0 7px 28px
+          -webkit-box-shadow: rgba(23,43,99,0.24) 0 7px 28px
+          box-shadow: rgba(23,43,99,0.24) 0 7px 28px
+
+        &::after
+          background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%23fff" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
+          @media screen and (min-width: 600px)
+            background: none
+      &::after
+        @media screen and (min-width: 600px)
+          background: none
+
+      @media screen and (min-width: 600px)
+        display: inline-block
+        margin: 0 auto
+        padding: 15px 22px
+
+    @media screen and (min-width: 600px)
+      display: block
+      position: absolute
+      top: 11px
+      right: 12px
+
+    @media screen and (min-width: 800px)
+      top: 15px
+      right: 15px
+
+.sub-nav
+  transition: all .6s 
+  opacity: 0
+  max-height: 0
+  overflow: hidden
+  visibility: hidden
+  z-index: 6
+  position: absolute
+  top: 66px
+  width: 100%
+
+  &__inner
+    overflow-x: auto
+    white-space: nowrap
+    padding: 36.375px 0
+    font-size: 15px
+    background-color: #f5f6f8
+
+    @media screen and (min-width: 600px)
+      text-align: center
+    
+    @media screen and (min-width: 800px)
+      background-color: rgba(255,255,255,0.97)
+  
+  a
+    margin: 0 23px
+
+    &:nth-child(1)
+      color: $storefront-color
+
+    &:nth-child(2)
+      color: $membership-color
+
+    &:nth-child(3)
+      color: $billing-color
+
+    &:nth-child(4)
+      color: $invoice-color
+
+    &:nth-child(5)
+      color: $pay-me-color
+
 .slider
     position: relative
     width: 100%
-
-    // margin: 50px 0
     padding: 50px 0
     overflow: hidden
 
@@ -134,18 +316,21 @@
                 @media screen and (min-width: 500px)
                     max-width: 320px
 
+            &__title,
+            &__sub-title,
+            &__link
+              &--membership
+                  color: $membership-color
+
+              &--billing
+                  color: $billing-color
+
+              &--storefront
+                  color: $storefront-color
+
             &__title
                 font-size: 45px
                 font-weight: 400
-
-                &--membership
-                    color: #f44c67
-
-                &--billing
-                    color: #2fca74
-
-                &--storefront
-                    color: #4f5ef5
 
             &__sub-title
                 font-size: 18px
@@ -156,15 +341,6 @@
                     margin-bottom: 75px
 
                 line-height: 21.6px
-
-                &--membership
-                    color: #f44c67
-
-                &--billing
-                    color: #2fca74
-
-                &--storefront
-                    color: #4f5ef5
 
             &__text
                 font-size: 16px
@@ -180,15 +356,6 @@
                 display: block
                 line-height: 14px
                 letter-spacing: 1.4px
-
-                &--membership
-                    color: #f44c67
-
-                &--billing
-                    color: #2fca74
-
-                &--storefront
-                    color: #4f5ef5
 
     &__pagination
         display: block
@@ -367,3 +534,68 @@
 
         &__copyright-link
             color: #1d1d1f
+
+.boxes
+  // display: grid
+  // grid-template-rows: auto
+  &__container
+    &:first-of-type
+      @media screen and (min-width: 900px)
+        display: grid
+        grid-template-columns: repeat(1, .58fr .42fr)
+        grid-row-gap: 40px
+    &:last-of-type
+      @media screen and (min-width: 900px)
+        display: grid
+        grid-template-columns: repeat(1, .42fr .58fr)
+        grid-row-gap: 40px
+    &:last-of-type
+      .box:last-of-type
+        z-index: -1
+
+  .box
+    &-one
+      background-color: #f5f7fb
+      @media screen and (min-width: 900px)
+        margin-bottom: 40px
+        margin-right: -20px
+    &-four
+      background-color: #f5f7fb
+      @media screen and (min-width: 900px)
+        margin-top: 50px
+        margin-left: -20px
+    &-two
+      background-color: #f44c67
+      @media screen and (min-width: 900px)
+        margin-top: 40px
+    &-three
+      background-color: #1d1d1f
+      @media screen and (min-width: 900px)
+        margin-top: 20px
+    &__title
+      &-alt
+        font-size: 16px
+        text-transform: uppercase
+        letter-spacing: 1.6px
+      &-main
+        font-size: 28px
+        font-weight: 400
+        margin-top: 20px
+        margin-bottom: 15px
+        @media screen and (min-width: 900px)
+          margin-bottom: 22px
+          font-size: 26px
+    &__text
+      font-weight: 400
+      font-size: 16px
+      line-height: 20.8px
+
+    &__inner
+      padding: 45px 35px
+      @media screen and (min-width: 900px)
+        padding: 65px 75px
+
+
+ 
+      
+        
