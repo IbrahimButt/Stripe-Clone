@@ -104,7 +104,8 @@
       margin: 0 auto
       margin-bottom: 54px
       max-width: 590px
-
+    .button.big
+      margin: 0 auto
 
 .membership
   .hero
@@ -479,17 +480,6 @@
 
         &__link
             transition: opacity .3s
-            // &::after
-            //     transition: transform .3s
-            //     content: " "
-            //     width: 5px
-            //     height: 9px
-            //     position: relative
-            //     display: inline-block
-            //     margin-top: -2px
-            //     align-self: center
-            //     transform: translateX(3px)
-            //     background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%233e70ff" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
 
             &:hover
                 opacity: 0.5
@@ -618,20 +608,43 @@
       line-height: 24px
 
 .pricing
+  &__flexible
+    text-align: center
+    font-size: 18px
+    margin: 120px 0
+    // @media screen and (min-width: 600px)
+    //   margin: 0
   &-comparision
+
+    &__blocks-container
+      display: grid
+      grid-template-rows: 1fr 1fr
+      justify-items: center
+      margin-top: -80px
+      @media screen and (min-width: 600px)
+        grid-template-rows: auto
+        grid-template-columns: 1fr 1fr
+        max-width: 500px
+        margin: -80px auto 0 auto
+
     &__block
-      margin: 0 25px
       margin-bottom: 5px
       background-color: #fff
       border-radius: 3px
       -moz-box-shadow: rgba(29,29,31,0.13) 0 10px 60px
       -webkit-box-shadow: rgba(29,29,31,0.13) 0 10px 60px
       box-shadow: rgba(29,29,31,0.13) 0 10px 60px
+      min-width: 250px
 
+      &:first-of-type
+      
+        .pricing-comparision__block__section:nth-child(2)
+          padding-bottom: 33px
       &__section
         &:nth-child(1)
           padding: 26px
           border-left: 8px solid #1d1d1f
+          color: #1d1d1f
           border-radius: 3px 0 0 0
           font-size: 23px
           font-weight: 400
@@ -641,13 +654,47 @@
         &:nth-child(2)
           padding: 18px 26px
           border-left: 8px solid #9da5af
+
         &:nth-child(3)
           padding: 18px 26px
           border-left: 8px solid #dee1e4
+          strong 
+            margin-right: 4px
+          em
+            font-size: 30px
         &:nth-child(4)
-          padding: 18px 26+8px 0 26+8px
-          font-size: 14px
-          color: #1d1d1f
+          padding: 18px 34px 0 34px
         &:nth-child(5)
           padding: 28px
           text-align: center
+      
+        sup
+          font-size: 24px
+          margin-right: 3px
+          color: #abb1b7
+          line-height: 21.6px
+        strong
+          font-size: 44px
+          font-weight: 400
+          color: #1d1d1f
+          line-height: 21.6px
+        em
+          font-size: 16px
+          color: #abb1b7
+          font-style: normal
+          font-weight: bold
+          margin-left: 1px
+        p
+          font-size: 14px
+          color: #1d1d1f
+          max-width: 110px
+          span
+            color: #abb1b7
+        small
+          color: #abb1b7
+          font-size: 13px
+          a
+            color: #abb1b7
+            text-decoration: underline
+        .button
+          width: 100%

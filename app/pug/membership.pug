@@ -72,29 +72,51 @@ html(lang="en")
 
     section.pricing
       .pricing-comparision
-        .pricing-comparision__block
-          .pricing-comparision__block__section
-            h4 Basic
-          .pricing-comparision__block__section
-            p No monthly fee
-          .pricing-comparision__block__section
-            p Transaction fee
-          .pricing-comparision__block__section
-            p Unlimited Revenue
-          .pricing-comparision__block__section
-            a.button.small.filled(href="") Sign Up
-        .pricing-comparision__block
-          .pricing-comparision__block__section
-            h4 Basic
-          .pricing-comparision__block__section
-            p No monthly fee
-          .pricing-comparision__block__section
-            p Transaction fee
-          .pricing-comparision__block__section
-            p Unlimited Revenue
-          .pricing-comparision__block__section
-            p Button
+        .pricing-comparision__blocks-container
+          .pricing-comparision__block
+            .pricing-comparision__block__section
+              h4 Basic
+            .pricing-comparision__block__section
+              sup $
+              strong 0
+              em / mo
+              p No monthly fee
+            .pricing-comparision__block__section
+              strong 4
+              em %
+              p Transaction fee
+              small + 
+                a(href="") Merchant Fees
+            .pricing-comparision__block__section
+              p Unlimited Revenue
+            .pricing-comparision__block__section
+              a.button.small.filled(href="") Sign Up
+          .pricing-comparision__block
+            .pricing-comparision__block__section
+              h4 Premium
+            .pricing-comparision__block__section
+              sup $
+              strong 41
+              em / mo
+              p 
+                | Billed annualy 
+                span or $49 billed monthly
+            .pricing-comparision__block__section
+              strong 1
+              em %
+              p Transaction fee
+              small + 
+                a(href="") Merchant Fees
+            .pricing-comparision__block__section
+              p Unlimited Revenue
+            .pricing-comparision__block__section
+              a.button.small.filled(href="") Sign Up
 
+      p.pricing__flexible Flexible pricing for all of Plasso's products. 
+        a Learn more about pricing
+        
+    section.comparision
+      
 
       
     script(src="script.js")

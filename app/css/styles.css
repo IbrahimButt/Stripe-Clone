@@ -245,6 +245,8 @@ body {
     margin: 0 auto;
     margin-bottom: 54px;
     max-width: 590px; }
+  .product-page .hero .button.big {
+    margin: 0 auto; }
 
 .membership .hero__title,
 .membership .hero .button {
@@ -706,17 +708,37 @@ body {
     margin-bottom: 16px;
     line-height: 24px; }
 
+.pricing__flexible {
+  text-align: center;
+  font-size: 18px;
+  margin: 120px 0; }
+
+.pricing-comparision__blocks-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  margin-top: -80px; }
+  @media screen and (min-width: 600px) {
+    .pricing-comparision__blocks-container {
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr;
+      max-width: 500px;
+      margin: -80px auto 0 auto; } }
+
 .pricing-comparision__block {
-  margin: 0 25px;
   margin-bottom: 5px;
   background-color: #fff;
   border-radius: 3px;
   -moz-box-shadow: rgba(29, 29, 31, 0.13) 0 10px 60px;
   -webkit-box-shadow: rgba(29, 29, 31, 0.13) 0 10px 60px;
-  box-shadow: rgba(29, 29, 31, 0.13) 0 10px 60px; }
+  box-shadow: rgba(29, 29, 31, 0.13) 0 10px 60px;
+  min-width: 250px; }
+  .pricing-comparision__block:first-of-type .pricing-comparision__block__section:nth-child(2) {
+    padding-bottom: 33px; }
   .pricing-comparision__block__section:nth-child(1) {
     padding: 26px;
     border-left: 8px solid #1d1d1f;
+    color: #1d1d1f;
     border-radius: 3px 0 0 0;
     font-size: 23px;
     font-weight: 400;
@@ -728,13 +750,45 @@ body {
   .pricing-comparision__block__section:nth-child(3) {
     padding: 18px 26px;
     border-left: 8px solid #dee1e4; }
+    .pricing-comparision__block__section:nth-child(3) strong {
+      margin-right: 4px; }
+    .pricing-comparision__block__section:nth-child(3) em {
+      font-size: 30px; }
   .pricing-comparision__block__section:nth-child(4) {
-    padding: 18px 34px 0 34px;
-    font-size: 14px;
-    color: #1d1d1f; }
+    padding: 18px 34px 0 34px; }
   .pricing-comparision__block__section:nth-child(5) {
     padding: 28px;
     text-align: center; }
+  .pricing-comparision__block__section sup {
+    font-size: 24px;
+    margin-right: 3px;
+    color: #abb1b7;
+    line-height: 21.6px; }
+  .pricing-comparision__block__section strong {
+    font-size: 44px;
+    font-weight: 400;
+    color: #1d1d1f;
+    line-height: 21.6px; }
+  .pricing-comparision__block__section em {
+    font-size: 16px;
+    color: #abb1b7;
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 1px; }
+  .pricing-comparision__block__section p {
+    font-size: 14px;
+    color: #1d1d1f;
+    max-width: 110px; }
+    .pricing-comparision__block__section p span {
+      color: #abb1b7; }
+  .pricing-comparision__block__section small {
+    color: #abb1b7;
+    font-size: 13px; }
+    .pricing-comparision__block__section small a {
+      color: #abb1b7;
+      text-decoration: underline; }
+  .pricing-comparision__block__section .button {
+    width: 100%; }
 
 .button.big {
   padding: 23px 30px; }
