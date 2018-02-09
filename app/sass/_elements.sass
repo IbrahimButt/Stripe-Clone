@@ -536,8 +536,6 @@
             color: #1d1d1f
 
 .boxes
-  // display: grid
-  // grid-template-rows: auto
   &__container
     &:first-of-type
       @media screen and (min-width: 900px)
@@ -595,7 +593,58 @@
       @media screen and (min-width: 900px)
         padding: 65px 75px
 
+.points
+  @media screen and (min-width: 600px)
+    display: grid
+    grid-template-columns: 1fr 1fr
+  @media screen and (min-width: 800px)
+    grid-template-columns: 1fr 1fr 1fr
 
- 
-      
-        
+
+  &__block
+    padding: 30px 40px
+
+    &:nth-child(odd)
+      @media screen and (max-width: 800px)
+        background-color: #f5f6f8
+    // &__title
+    h4
+      font-size: 20px
+      color: #1d1d1f
+      margin-bottom: 16px
+      line-height: 24px
+
+.pricing
+  &-comparision
+    &__block
+      margin: 0 25px
+      margin-bottom: 5px
+      background-color: #fff
+      border-radius: 3px
+      -moz-box-shadow: rgba(29,29,31,0.13) 0 10px 60px
+      -webkit-box-shadow: rgba(29,29,31,0.13) 0 10px 60px
+      box-shadow: rgba(29,29,31,0.13) 0 10px 60px
+
+      &__section
+        &:nth-child(1)
+          padding: 26px
+          border-left: 8px solid #1d1d1f
+          border-radius: 3px 0 0 0
+          font-size: 23px
+          font-weight: 400
+          text-transform: uppercase
+          letter-spacing: 1.83333px
+
+        &:nth-child(2)
+          padding: 18px 26px
+          border-left: 8px solid #9da5af
+        &:nth-child(3)
+          padding: 18px 26px
+          border-left: 8px solid #dee1e4
+        &:nth-child(4)
+          padding: 18px 26+8px 0 26+8px
+          font-size: 14px
+          color: #1d1d1f
+        &:nth-child(5)
+          padding: 28px
+          text-align: center

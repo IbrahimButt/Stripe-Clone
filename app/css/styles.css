@@ -93,6 +93,19 @@ body {
       grid-column-gap: 16%;
       padding: 100px 40px 140px 40px; } }
 
+.boxes {
+  margin-bottom: 60px; }
+
+.points {
+  padding: 0 40px;
+  max-width: 1150px;
+  margin-bottom: 150px;
+  justify-self: center; }
+
+.pricing {
+  padding: 30px 30px;
+  background-color: #f3f4f8; }
+
 .footer-main {
   background: #f3f4f8 url(../images/bg-texture.png) repeat top left;
   -moz-background-size: 164px 72px;
@@ -671,6 +684,56 @@ body {
     .boxes .box__inner {
       padding: 65px 75px; } }
 
+@media screen and (min-width: 600px) {
+  .points {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
+
+@media screen and (min-width: 800px) {
+  .points {
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+.points__block {
+  padding: 30px 40px; }
+  @media screen and (max-width: 800px) {
+    .points__block:nth-child(odd) {
+      background-color: #f5f6f8; } }
+  .points__block h4 {
+    font-size: 20px;
+    color: #1d1d1f;
+    margin-bottom: 16px;
+    line-height: 24px; }
+
+.pricing-comparision__block {
+  margin: 0 25px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border-radius: 3px;
+  -moz-box-shadow: rgba(29, 29, 31, 0.13) 0 10px 60px;
+  -webkit-box-shadow: rgba(29, 29, 31, 0.13) 0 10px 60px;
+  box-shadow: rgba(29, 29, 31, 0.13) 0 10px 60px; }
+  .pricing-comparision__block__section:nth-child(1) {
+    padding: 26px;
+    border-left: 8px solid #1d1d1f;
+    border-radius: 3px 0 0 0;
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.83333px; }
+  .pricing-comparision__block__section:nth-child(2) {
+    padding: 18px 26px;
+    border-left: 8px solid #9da5af; }
+  .pricing-comparision__block__section:nth-child(3) {
+    padding: 18px 26px;
+    border-left: 8px solid #dee1e4; }
+  .pricing-comparision__block__section:nth-child(4) {
+    padding: 18px 34px 0 34px;
+    font-size: 14px;
+    color: #1d1d1f; }
+  .pricing-comparision__block__section:nth-child(5) {
+    padding: 28px;
+    text-align: center; }
+
 .button.big {
   padding: 23px 30px; }
   @media screen and (min-width: 400px) {
@@ -729,6 +792,10 @@ body {
 
 .box-three .box__title-alt {
   color: #768093; }
+
+@media screen and (min-width: 800px) {
+  .points__block--filled {
+    background-color: #f5f6f8; } }
 
 .no-animation {
   -webkit-animation: none !important;
