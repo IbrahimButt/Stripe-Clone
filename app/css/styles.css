@@ -98,11 +98,14 @@ body {
 
 .boxes {
   margin-bottom: 60px; }
+  @media screen and (min-width: 900px) {
+    .boxes {
+      margin-bottom: 140px; } }
 
 .points {
   padding: 0 40px;
   max-width: 1150px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
   justify-self: center; }
 
 .pricing {
@@ -878,7 +881,8 @@ body {
 
 .comparision thead th {
   color: #1d1d1f;
-  text-align: center; }
+  text-align: center;
+  padding-right: 0; }
   @media screen and (min-width: 400px) {
     .comparision thead th {
       font-size: 18px; } }
@@ -890,12 +894,12 @@ body {
   border-bottom: 1px solid #e8ebef; }
   @media screen and (min-width: 400px) {
     .comparision tr {
-      grid-template-columns: auto 100px 100px; } }
+      grid-template-columns: auto 110px 110px; } }
 
 .comparision th {
   text-align: right;
   font-size: 13px;
-  padding-right: 10%;
+  padding-right: 20%;
   font-weight: 400;
   line-height: 16.9px; }
   @media screen and (min-width: 400px) {
