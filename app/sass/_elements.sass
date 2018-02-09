@@ -110,8 +110,6 @@
       max-width: 590px
     .button.big
       margin: 0 auto
-      @media screen and (min-width: 400px)
-        padding: 23px 75px
 
       &::after
         transition: transform .5s
@@ -121,7 +119,6 @@
         // position: relative
         display: inline-block
         transform: translateX(6px)
-        background-image: url('data:image/svg+xml,<svg%20version="1.1"%20xmlns="http://www.w3.org/2000/svg"%20xmlns:xlink="http://www.w3.org/1999/xlink"%20x="0px"%20y="0px"%20viewBox="0%200%2010.0401%2017.9909"%20enable-background="new%200%200%2010.0401%2017.9909"%20xml:space="preserve"><path%20fill="%23f44c67"%20fill-rule="evenodd"%20clip-rule="evenodd"%20d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
 
       &:hover::after
         transform: translateX(9px)
@@ -132,6 +129,23 @@
     .button
       color: $membership-color
       border-color: $membership-color
+      @media screen and (min-width: 400px)
+          padding: 23px 75px
+      &::after
+        background-image: url('data:image/svg+xml,<svg%20version="1.1"%20xmlns="http://www.w3.org/2000/svg"%20xmlns:xlink="http://www.w3.org/1999/xlink"%20x="0px"%20y="0px"%20viewBox="0%200%2010.0401%2017.9909"%20enable-background="new%200%200%2010.0401%2017.9909"%20xml:space="preserve"><path%20fill="%23f44c67"%20fill-rule="evenodd"%20clip-rule="evenodd"%20d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
+
+.storefront
+  .hero
+    &__title,
+    .button.big
+      color: $storefront-color
+      border-color: $storefront-color
+      padding: 23px 50px
+      margin: 0 12px 30px 12px
+      @media screen and (min-width: 400px)
+        padding: 23px 30px
+      &::after
+        background-image: url('data:image/svg+xml,<svg%20version="1.1"%20xmlns="http://www.w3.org/2000/svg"%20xmlns:xlink="http://www.w3.org/1999/xlink"%20x="0px"%20y="0px"%20viewBox="0%200%2010.0401%2017.9909"%20enable-background="new%200%200%2010.0401%2017.9909"%20xml:space="preserve"><path%20fill="%234f5ef5"%20fill-rule="evenodd"%20clip-rule="evenodd"%20d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
   
 .main-menu
   max-height: 0
@@ -575,7 +589,6 @@
         margin-top: 50px
         margin-left: -20px
     &-two
-      background-color: #f44c67
       @media screen and (min-width: 900px)
         margin-top: 40px
     &-three
@@ -609,6 +622,14 @@
       padding: 45px 35px
       @media screen and (min-width: 500px)
         padding: 65px 75px
+
+.membership
+  .box-two
+      background-color: $membership-color
+.storefront
+  .box-two
+      background-color: $storefront-color
+      
 
 .points
   @media screen and (min-width: 600px)

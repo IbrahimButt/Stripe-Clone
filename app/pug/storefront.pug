@@ -1,0 +1,132 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet", href="css/normal.css")
+    link(rel="stylesheet", href="css/styles.css")
+    title Plasso
+  body.product-page.storefront
+    include header.pug
+    section.hero
+      .hero__wrap
+        h2.hero__title Storefront
+        p.hero__tagline Accept payments and sell anything.
+        p.hero__sub-text Powerful and easy one-off product sales. Sell physical and digital goods, charge for services, accept donations, sell pre-orders and more. Storefront makes it all too easy.
+        a.button.big.outlined(href="#") Try Demo
+        a.button.big.outlined(href="#") Try Embed
+        
+    section.boxes
+    
+      .boxes__container
+        .box
+          .box__inner.box-one
+            span.box__title-alt Payments Platform
+            h3.box__title-main Powerful and easy one-off payments.
+            p.box__text  Start accepting payments instantly with Plasso. Setting up product pages, called 'Spaces', to sell your digital or physical goods/services is super easy. You can sell multiple products per Space and even collect custom data from customers at checkout.
+        .box
+          .box__inner.box-two
+            span.box__title-alt Customer Management
+            h3.box__title-main Know your customers.
+            p.box__text Anytime someone purchases your products or you receive a payment you'll be able to manage those payments and customers from within Plasso. You can issue refunds, view transaction history and even edit/update your customer data. 
+      .boxes__container
+        
+        .box
+          .box__inner.box-three
+            span.box__title-alt Flexible Payments
+            h3.box__title-main Take pre-orders and accept donations.
+            p.box__text Capture pre-orders to charge your customer's credit cards at a later time. Your customers can manage their own pre-order and even keep their credit card up to date. Accepting donations is easy; with one click all the language on the payment form will be donation specific. 
+
+        .box
+          .box__inner.box-four
+            span.box__title-alt Sell Anything
+            h3.box__title-main Shipping support and digital file delivery.
+            p.box__text Collect shipping addresses at checkout and send shipment notifications to your customers with one click. Sell your digital goods and files: ebooks, videos, music, etc. Plasso takes care of the secure file delivery. 
+    
+    section.points
+      .points__block.points__block--filled
+        h4 Collect custom data
+        p Add any number of form fields to your sign up form to gather more data from your customers at sign up.
+      .points__block.points__block--filled
+        h4 Offer coupons and discounts
+        p Incentivise customers with coupon codes. You'll be able to keep track of each coupon code's usage.
+      .points__block.points__block--filled
+        h4 Product quantity support
+        p Your customers can purchase multiples of any of your products. You can set a stock limit to control inventory. 
+      .points__block
+        h4 No coding
+        p Sell your products without writing any code at all. No 3rd party integrations or development required. 
+      .points__block
+        h4 Automatic emails
+        p Add any number of form fields to your sign up form to gather more data from your customers at sign up.
+      .points__block
+        h4 Customizable emails
+        p Add any number of form fields to your sign up form to gather more data from your customers at sign up.
+      .points__block.points__block--filled
+        h4 Analytics and reports
+        p Add any number of form fields to your sign up form to gather more data from your customers at sign up.
+      .points__block.points__block--filled
+        h4 Export data
+        p Add any number of form fields to your sign up form to gather more data from your customers at sign up.
+      .points__block.points__block--filled
+        h4 256-bit SSL security
+        p Add any number of form fields to your sign up form to gather more data from your customers at sign up.
+
+    section.pricing
+      .pricing-comparision
+        .pricing-comparision__blocks-container
+          .pricing-comparision__block
+            .pricing-comparision__block__section
+              h4 Basic
+            .pricing-comparision__block__section
+              sup $
+              strong 0
+              em / mo
+              p No monthly fee
+            .pricing-comparision__block__section
+              strong 4
+              em %
+              p Transaction fee
+              small + 
+                a(href="") Merchant Fees
+            .pricing-comparision__block__section
+              p Unlimited Revenue
+            .pricing-comparision__block__section
+              a.button.small.filled(href="") Sign Up
+          .pricing-comparision__block
+            .pricing-comparision__block__section
+              h4 Premium
+            .pricing-comparision__block__section
+              sup $
+              strong 41
+              em / mo
+              p 
+                | Billed annualy 
+                span or $49 billed monthly
+            .pricing-comparision__block__section
+              strong 1
+              em %
+              p Transaction fee
+              small + 
+                a(href="") Merchant Fees
+            .pricing-comparision__block__section
+              p Unlimited Revenue
+            .pricing-comparision__block__section
+              a.button.small.filled(href="") Sign Up
+
+      p.pricing__flexible Flexible pricing for all of Plasso's products. 
+        a Learn more about pricing
+
+    section.comparision
+      h4.comparision__main-title Need to charge on a recurring basis?
+      p.comparision__main-text 
+        | Try our 
+        b Membership
+        |  product. 
+        a(href="") Learn More
+    
+    include footer.pug
+
+      
+    script(src="script.js")
