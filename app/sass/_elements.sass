@@ -98,6 +98,10 @@
       font-weight: 200
       color: #1d1d1f
       max-width: 590px
+      @media screen and (min-width: 400px)
+        font-size: 26px
+        line-height: 31.2px
+
     &__sub-text
       font-size: 17px
       line-height: 22.1px
@@ -106,6 +110,21 @@
       max-width: 590px
     .button.big
       margin: 0 auto
+      @media screen and (min-width: 400px)
+        padding: 23px 75px
+
+      &::after
+        transition: transform .5s
+        content: " "
+        width: 5px
+        height: 9px
+        // position: relative
+        display: inline-block
+        transform: translateX(6px)
+        background-image: url('data:image/svg+xml,<svg%20version="1.1"%20xmlns="http://www.w3.org/2000/svg"%20xmlns:xlink="http://www.w3.org/1999/xlink"%20x="0px"%20y="0px"%20viewBox="0%200%2010.0401%2017.9909"%20enable-background="new%200%200%2010.0401%2017.9909"%20xml:space="preserve"><path%20fill="%23f44c67"%20fill-rule="evenodd"%20clip-rule="evenodd"%20d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
+
+      &:hover::after
+        transform: translateX(9px)
 
 .membership
   .hero
@@ -573,6 +592,11 @@
         font-weight: 400
         margin-top: 20px
         margin-bottom: 15px
+        @media screen and (min-width: 400px)
+          font-size: 24px
+        @media screen and (min-width: 400px)
+          font-size: 26px
+
         @media screen and (min-width: 900px)
           margin-bottom: 22px
           font-size: 26px
@@ -583,7 +607,7 @@
 
     &__inner
       padding: 45px 35px
-      @media screen and (min-width: 900px)
+      @media screen and (min-width: 500px)
         padding: 65px 75px
 
 .points
@@ -612,8 +636,7 @@
     text-align: center
     font-size: 18px
     margin: 120px 0
-    // @media screen and (min-width: 600px)
-    //   margin: 0
+ 
   &-comparision
 
     &__blocks-container
@@ -698,3 +721,88 @@
             text-decoration: underline
         .button
           width: 100%
+          &::after
+            transition: transform .5s
+            content: " "
+            width: 5px
+            height: 9px
+            // position: relative
+            display: inline-block
+            transform: translateX(3px)
+            background-image: url('data:image/svg+xml,<svg%20version="1.1"%20xmlns="http://www.w3.org/2000/svg"%20xmlns:xlink="http://www.w3.org/1999/xlink"%20x="0px"%20y="0px"%20viewBox="0%200%2010.0401%2017.9909"%20enable-background="new%200%200%2010.0401%2017.9909"%20xml:space="preserve"><path%20fill="%23fff"%20fill-rule="evenodd"%20clip-rule="evenodd"%20d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>')
+
+          &:hover::after
+            transform: translateX(6px)
+
+.comparision
+  &__main-title
+    margin: 0 30px
+    margin-bottom: 14px
+    font-size: 32px
+    font-weight: 200
+    color: #1d1d1f
+    line-height: 35.2px
+    text-align: center
+
+  &__main-text
+    text-align: center
+    font-size: 18px
+    // font-weight: no
+    color: #768093
+    margin: 0 30px
+    margin-bottom: 40px
+    line-height: 23.4px
+
+    b
+      font-weight: normal
+      color: #1d1d1f
+  table
+    border-spacing: 8px
+    max-width: 500px
+    margin: 0 auto
+  thead
+    th
+      color: #1d1d1f
+      text-align: center
+      
+      @media screen and (min-width: 400px)
+        font-size: 18px
+  tr
+    padding: 12px 8px 12px 8px
+    display: grid
+    grid-template-columns: auto 75px 75px
+    border-bottom: 1px solid #e8ebef
+    @media screen and (min-width: 400px)
+      grid-template-columns: auto 100px 100px
+  th
+    text-align: right
+    font-size: 13px
+    padding-right: 10%
+    font-weight: 400
+    line-height: 16.9px
+    @media screen and (min-width: 400px)
+      font-size: 15px
+  td
+    text-align: center
+    font-size: 13px
+    // padding-right: 10%
+    align-self: center
+    font-weight: 400
+    line-height: 16.9px
+    @media screen and (min-width: 400px)
+      font-size: 15px
+
+  &__no
+    display: block
+    height: 24px
+    width: 24px
+    border:  1px solid #ed4d4d
+    border-radius: 50px
+    margin: 0 auto
+  
+  &__yes
+    height: 24px
+    width: 24px
+    border:  1px solid #35c87f
+    border-radius: 50px
+    margin: 0 auto

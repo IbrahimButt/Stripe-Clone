@@ -114,9 +114,55 @@ html(lang="en")
 
       p.pricing__flexible Flexible pricing for all of Plasso's products. 
         a Learn more about pricing
-        
+
     section.comparision
-      
+      h4.comparision__main-title Need more control?
+      p.comparision__main-text 
+        | Try our 
+        b Billing 
+        | product to create your own customer experience and leave the rest to us. 
+        a(href="") Learn More
+
+      table.comparision__table
+        thead
+          tr
+            th(scope="col")
+            th(scope="col") Membership
+            th(scope="col") Billing
+        tbody
+          tr
+            th(scope="row") Embeddable
+            td.comparision__no
+              .lols
+            td.comparision__yes
+              .lols
+          tr
+            th(scope="row") Post content for your members into their dashboard
+            td
+              .comparision__yes
+            td
+              .comparision__no
+          tr
+            th(scope="row") Customers stay on your own domain and website
+            td
+              .comparision__no
+            td
+              .comparision__yes
+          tr
+            th(scope="row") Create custom payment plans 
+            td
+              .comparision__yes
+            td
+              .comparision__yes
+    
+          tr
+            th(scope="row") No coding and no web development needed 
+            td
+              .comparision__yes
+            td
+              .comparision__yes
+    
+    include footer.pug
 
       
     script(src="script.js")

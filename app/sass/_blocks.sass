@@ -32,6 +32,8 @@ body
 .product-page
   .hero
     padding: 0 20px
+    @media screen and (min-width: 400px)
+      padding: 0 45px
 
 .latest
   padding: 50px 30px 0 30px
@@ -60,7 +62,11 @@ body
 
 .pricing
   padding: 30px 30px
-  background-color: #f3f4f8
+  background-color: lighten(#f3f4f8, 10%)
+
+.comparision
+  background-color: lighten(#f3f4f8, 10%)
+  margin-bottom: 100px
 
 .footer
   &-main
